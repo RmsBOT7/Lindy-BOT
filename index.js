@@ -75,7 +75,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Halo @${num.split('@')[0]}\nSelamat datang di group Jangan Lupa INTRO Yang Baru Masuk Jangan lupa save nomor owner bot ketik #owner :v *${mdata.subject}*`
+				teks = `Halo @${num.split('@')[0]}\nSelamat datang di group Jangan Lupa INTRO Yang Baru!..Betah betah yah disini🎉 :v *${mdata.subject}*`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -85,7 +85,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Semoga Tenang Di Alam Sana @${num.split('@')[0]}👋`
+				teks = `Semoga Tenang Di Alam Sana @${num.split('@')[0]}👋 Al-fatihah`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -187,7 +187,7 @@ async function starts() {
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*Nama bot* : ${me.name}\n*Anuther* : *XPTN*\n*FRENDS* : ALFA GANS\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}`
+					teks = `*Nama bot* : ${me.name}\n*Author* : *XPTN*\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}\n\n*Device* : Realme 7pro\n*Sinyal* : Indosat asuu\n*Baterai* : Low ngentod!\n\nUntuk menghindari Bot Pending/delay diharapkan tidak spam`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break

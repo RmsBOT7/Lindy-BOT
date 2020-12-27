@@ -120,6 +120,7 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}block*
 ┃╠➥ *${prefix}unblock*
 ┃╠➥ *${prefix}ban*
+┃╠➥ *${prefix}hidetag*
 ┣━━━━━━━━━━━━━━━━━━⊱
 ┃ *Follow to Ig Bot*
 ┃ instagram.com/barxnl 

@@ -24,11 +24,11 @@ const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 const vcard = 'BEGIN:VCARD\n' // ANAK ANJING MAU NGAPAIN?
             + 'VERSION:3.0\n' // NGAPAIN LAGI KALO GA MAU NUMPANG NAMA DOANG XIXIXIXI
-            + 'FN:XPTN\n' // MENDING LU TOBAT SU!
-            + 'ORG:Creator XPTN;\n' // KASIH CREDITS GUA SU!!!
-            + 'TEL;type=CELL;type=VOICE;waid=6289655478810:+62 896-5547-8810\n' // JANGAN KEK BABI SU
+            + 'FN:Barxnl\n' // MENDING LU TOBAT SU!
+            + 'ORG:Creator Lindy-BOT;\n' // KASIH CREDITS GUA SU!!!
+            + 'TEL;type=CELL;type=VOICE;waid=6282198571732:+62 821-9857-1732\n' // JANGAN KEK BABI SU
             + 'END:VCARD'
-prefix = '$'
+prefix = '#'
 blocked = []
 
 function kyun(seconds){
@@ -75,7 +75,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Halo @${num.split('@')[0]}\nSelamat datang di group Jangan Lupa INTRO Yang Baru Masuk Jangan lupa save nomor owner bot ketik $creator :v *${mdata.subject}*`
+				teks = `Halo @${num.split('@')[0]}\nSelamat datang di group Jangan Lupa INTRO Yang Baru Masuk Jangan lupa save nomor owner bot ketik #owner :v *${mdata.subject}*`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -138,8 +138,8 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["6289655478810@s.whatsapp.net"] // replace this with your number
-			const adminbotnumber = ["6282387711916@s.whatsapp.net"]
+			const ownerNumber = ["6282198571732@s.whatsapp.net"] // replace this with your number
+			const adminbotnumber = ["6281250242791@s.whatsapp.net"]
 			const frendsowner = ["6282198571732@s.whatsapp.net"]
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
@@ -1336,7 +1336,7 @@ async function starts() {
 					}
 					mentions(teks, members_id, true)
 					break
-			    case 'otagall':
+			    case 'mentionall':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
@@ -1346,7 +1346,7 @@ async function starts() {
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions('╔══✪〘 Mention All 〙✪══'+teks+'╚═〘 XP-TN BOT 〙', members_id, true)
+					mentions('╔══✪〘 Mention All 〙✪══'+teks+'╚═〘 BARXNL-BOT 〙', members_id, true)
 					break
 				case 'clearall':
 					if (!isOwner) return reply('Kamu siapa?')
@@ -1370,7 +1370,7 @@ async function starts() {
 						reply('Suksess broadcast')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `[ *XPTN Broadcast* ]\n\n${body.slice(4)}`)
+							sendMess(_.jid, `[ *BARXNL Broadcast* ]\n\n${body.slice(4)}`)
 						}
 						reply('Suksess broadcast')
 					}
@@ -1443,7 +1443,7 @@ async function starts() {
 						client.deleteMessage(from, mentioned)
 					}
 					break
-			    case 'unpromote':
+			    case 'demote':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)

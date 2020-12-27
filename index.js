@@ -315,7 +315,7 @@ async function starts() {
 						reply(`Kirim gambar dengan caption ${prefix}sticker atau tag gambar yang sudah dikirim`)
 					}
 					break
-			case 'creator':
+			case 'owner':
                  client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
                  client.sendMessage(from, 'itu pacar ku eh owner ku ><',MessageType.text, { quoted: mek} )
                  break

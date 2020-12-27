@@ -96,6 +96,7 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}mlherolist* [Fanny]
 ┃╠➥ *${prefix}randomchat*
 ┃╠➥ *${prefix}walpaperhd*
+┃╠➥ *${prefix}quotemaker* [tx|tx|tx]
 ┃╠➥ *${prefix}report* [fitur error bro]
 ┣━━°❀ ❬ _*Nsfw & Anime*_ ❭ ❀°━━━⊱
 ┃╠➥ *${prefix}loli*

@@ -79,7 +79,7 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}map* [kota]
 ┃╠➥ *${prefix}infomotor*
 ┃╠➥ *${prefix}Indomobil*
-┃╠➥ *${prefix}playstore*
+┃╠➥ *${prefix}playstore* [error]
 ┃╠➥ *${prefix}igstalk* [barxnl]
 ┃╠➥ *${prefix}resepmasakan*
 ┃╠➥ *${prefix}indohot*

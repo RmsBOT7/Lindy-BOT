@@ -28,7 +28,7 @@ const vcard = 'BEGIN:VCARD\n' // ANAK ANJING MAU NGAPAIN?
             + 'ORG:Creator Lindy-BOT;\n' // KASIH CREDITS GUA SU!!!
             + 'TEL;type=CELL;type=VOICE;waid=6282198571732:+62 821-9857-1732\n' // JANGAN KEK BABI SU
             + 'END:VCARD'
-prefix = '$'
+prefix = '#'
 blocked = []
 
 function kyun(seconds){
@@ -219,6 +219,8 @@ async function starts() {
 					break
 				case 'stiker':
 				case 'sticker':
+                                case 'sgif':
+                                case 's':
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await client.downloadAndSaveMediaMessage(encmedia)

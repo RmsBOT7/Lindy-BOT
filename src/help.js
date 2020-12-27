@@ -1,102 +1,98 @@
 const help = (prefix) => { 
-	return `                 
-┏━━━°❀ ❬ OWNER CIMMAND ❭ ❀°━━━┓
+	return ` *Lindy-BOT*                
+Hi👋
+Jangan spam gua Tod🗿
+┏━━━°❀ ❬ _*ABOUT*_ ❭ ❀°━━━┓
+┃║
+┏❉ *${prefix}owner*
+┣❉ *${prefix}info*
+┗❉ *${prefix}donasi*
 ┃
-┏❉ *${prefix}bc*
-┣❉ *${prefix}block*
-┣❉ *${prefix}unblock*
+┣━━━°❀ ❬ _*MAKER*_ ❭ ❀°━━━⊱
+┃╠➥ *${prefix}sticker*
+┃╠➥ *${prefix}stiker*
+┃╠➥ *${prefix}sgif*
+┃╠➥ *${prefix}tsticker*
+┃╠➥ *${prefix}nulis*
+┣━━━━°❀ ❬ _*MEDIA*_ ❭ ❀°━━⊱
+┃╠➥ *${prefix}tts*
+┃╠➥ *${prefix}gtts*
+┃╠➥ *${prefix}tiktok*
+┃╠➥ *${prefix}meme*
+┃╠➥ *${prefix}memeindo*
+┃╠➥ *${prefix}ocr*
+┣━°❀ ❬ _*DOWNLOAD*_ ❭ ❀°━━⊱
+┃╠➥ *${prefix}yt*
+┃╠➥ *${prefix}ytsearch* [search yt]
+┃╠➥ *${prefix}ytmp3* [link]
+┃╠➥ *${prefix}tiktok* [link]
+┣━━°❀ ❬ _*GROUP*_ ❭ ❀°━━━━⊱
+┃╠➥ *${prefix}tagall*
+┃╠➥ *${prefix}promote* [tag]
+┃╠➥ *${prefix}demote* [tag]
+┃╠➥ *${prefix}kick* [tag]
+┃╠➥ *${prefix}group* [buka/tutup]
+┃╠➥ *${prefix}add* [62xxx]
+┃╠➥ *${prefix}welcome* [1/0]
+┃╠➥ *${prefix}setpp*
+┃╠➥ *${prefix}nsfw* [1/0]
+┃╠➥ *${prefix}tagme*
+┃╠➥ *${prefix}simih* [1/0]
+┃╠➥ *${prefix}groupinfo*
+┃╠➥ *${prefix}linkgc*
+┣━━━°❀ ❬ _*OTHER*_ ❭ ❀°━━━⊱
+┃╠➥ *${prefix}blocklist*
+┃╠➥ *${prefix}simi*
+┃╠➥ *${prefix}wait*
+┃╠➥ *${prefix}fitnah*
+┃╠➥ *${prefix}tiktokstalk*
+┃╠➥ *${prefix}url2img*
+┃╠➥ *${prefix}quotes*
+┃╠➥ *${prefix}hilih* [text]
+┃╠➥ *${prefix}text3d*
+┃╠➥ *${prefix}ninjalogo*
+┃╠➥ *${prefix}lirik*
+┃╠➥ *${prefix}wolflogo*
+┃╠➥ *${prefix}lionlogo*
+┃╠➥ *${prefix}tebakgambar*
+┃╠➥ *${prefix}caklontong*
+┃╠➥ *${prefix}family100*
+┃╠➥ *${prefix}game*
+┃╠➥ *${prefix}textscreen* [teks]
+┃╠➥ *${prefix}tahta [teks]
+┃╠➥ *${prefix}rtext* [teks]
+┃╠➥ *${prefix}glitch* [teks> | teks]
+┃╠➥ *${prefix}party* [text]
+┃╠➥ *${prefix}lovemake* [text]
+┃╠➥ *${prefix}primbonjodoh* [text|text]
+┃╠➥ *${prefix}artinama* [nama]
+┃╠➥ *${prefix}ramalhp" [nomor]
+┃╠➥ *${prefix}truth*
+┃╠➥ *${prefix}dare*
+┣━━°❀ ❬ _*Nsfw & Anime*_ ❭ ❀°━━━⊱
+┃╠➥ *${prefix}loli*
+┃╠➥ *${prefix}waifu*
+┃╠➥ *${prefix}randomhentai*
+┃╠➥ *${prefix}nsfwtrap*
+┃╠➥ *${prefix}nsfwloli*
+┃╠➥ *${prefix}nsfwneko*
+┣━━°❀ ❬ _*OWNER*_ ❭ ❀°━━━⊱
+┃╠➥ *${prefix}bc*
+┃╠➥ *${prefix}leave*
+┃╠➥ *${prefix}clearall*
+┃╠➥ *${prefix}setprefix*
+┃╠➥ *${prefix}clone*
+┃╠➥ *${prefix}block*
+┃╠➥ *${prefix}unblock*
+┣━━━━━━━━━━━━━━━━━━⊱
+┃ *Follow to Ig Bot*
+┃ instagram.com/barxnl 
 ┃
-┣━━━°❀ ❬ STICKER COMMAND ❭ ❀°━━━⊱
-┃
-┣➥ *${prefix}sticker*
-┣➥ *${prefix}tsticker*
-┣➥ *${prefix}nulis*
-┃
-┣━━━°❀ ❬ DONASI | BESTFREND ❭ ❀°━━━⊱
-┃
-┣➥ *${prefix}donasi*
-┣➥ *${prefix}Thanks To #Alfa📣*
-┣➥ *${prefix}Support Bot XPTN*
-┣➥ *${prefix}Web Api : xptnbotapi.herokuapp.com*
-┃
-┣━━━°❀ ❬ UPDATE COMMAND ❭ ❀°━━━⊱
-┃
-┣➥ *${prefix}text3d*
-┣➥ *${prefix}ninjalogo*
-┣➥ *${prefix}quotes*
-┣➥ *${prefix}lirik*
-┣➥ *${prefix}bucin*
-┣➥ *${prefix}wolflogo*
-┣➥ *${prefix}lionlogo*
-┣➥ *${prefix}tebakgambar*
-┣➥ *${prefix}caklontong*
-┣➥ *${prefix}family100*
-┣➥ *${prefix}game*
-┣➥ *${prefix}textscreen <teks>*
-┣➥ *${prefix}tahta <teks>*
-┣➥ *${prefix}rtext <teks>*
-┣➥ *${prefix}glitch <teks> | <teks>*
-┣➥ *${prefix}party <teks>*
-┣➥ *${prefix}lovemake <teks>*
-┣➥ *${prefix}primbonjodoh <teks> | <teks>*
-┣➥ *${prefix}artinama <nama>*
-┣➥ *${prefix}ramalhp <nomor>*
-┃
-┣━━━━°❀🔗 ❬ COMMAND NSFW ❭ 🔗❀°━━━⊱
-┃
-┣➥ *${prefix}loli*
-┣➥ *${prefix}waifu*
-┣➥ *${prefix}randomhentai*
-┣➥ *${prefix}nsfwtrap*
-┣➥ *${prefix}nsfwloli*
-┣➥ *${prefix}nsfwneko*
-┣➥ *${prefix}loli*
-┃Jika Inging mengaktifkan nya ketik
-┃nsfw1 kalo mau di nonaktifkan nsfw0
-┣━━━°❀ ❬ COMMAND DOWNLOADER ❭ ❀°━━⊱
-┃
-┣➥ *ytsearch* [search yt]
-┣➥ *ytmp3* [link]
-┣➥ *tiktok* [link]
-┃
-┣━━━━°❀ ❬ GROUB ONLY ❭ ❀°━━━━⊱
-┃
-┣➥ *${prefix}add* [62xxx]
-┣➥ *${prefix}kick* [tag]
-┣➥ *${prefix}setpp*
-┣➥ *${prefix}demote* [tag]
-┣➥ *${prefix}promote* [tag]
-┣➥ *${prefix}setpp*
-┣➥ *${prefix}group* [buka/tutup]
-┣➥ *${prefix}welcome* [1/0]
-┣➥ *${prefix}nsfw* [1/0]
-┣➥ *${prefix}simih* [1/0]
-┣➥ *${prefix}groupinfo*
-┃
-┣━━━━━°❀ ❬ 𝙊𝙒𝙉𝙀𝙍 ❭ ❀°━━━━⊱
-┃
-┣➥ *${prefix}bc* 
-┣➥ *${prefix}leave*
-┣➥ *${prefix}clearall*
-┣➥ *${prefix}setprefix*
-┣➥ *${prefix}clone* [tag]
-┣➥ *${prefix}block*
-┣➥ *${prefix}unblock*
-┣➥ *${prefix}getses*
-┃
-┣━━━━°❀ ❬ 𝙊𝙏𝙃𝙀𝙍 ❭ ❀°━━━━━⊱
-┃
-┣➥ *${prefix}ytsearch*
-┣➥ *${prefix}listadmin*
-┣➥ *${prefix}blocklist*
-┣➥ *${prefix}simi*
-┣➥ *${prefix}wait*
-┣➥ *${prefix}fitnah*
-┣➥ *${prefix}tiktokstalk*
-┣➥ *${prefix}url2img*
-┃
-┣━━━━━━━━━━━━━━━━━━━━
-┃ ${prefix}*Follow IG* ~_xptn~
-┗━━━━━━━━━━━━━━━━━━━━`
+┃ *Special Thanks To* 🤝
+┃-MhankBarBar
+┃-Xptn-BOT
+┣━━━━━━━━━━━━━━━━━━⊱ 
+┃ _*Powered By BARXNL-BOT*_
+┗━━━━━━━━━━━━━━━━━━⊱`
 }
 exports.help = help

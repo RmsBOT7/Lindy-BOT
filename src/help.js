@@ -83,14 +83,14 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}igstalk* [barxnl]
 ┃╠➥ *${prefix}resepmasakan*
 ┃╠➥ *${prefix}indohot*
-┃╠➥ *${prefix}pinterest [text]
+┃╠➥ *${prefix}pinterest* [text]
 ┃╠➥ *${prefix}anjing*
 ┃╠➥ *${prefix}babi*
 ┃╠➥ *${prefix}unta*
 ┃╠➥ *${prefix}elang*
 ┃╠➥ *${prefix}inu*
 ┃╠➥ *${prefix}brainly*
-┃╠➥ *${prefix}image [text]
+┃╠➥ *${prefix}image* [text]
 ┃╠➥ *${prefix}infogempa*
 ┃╠➥ *${prefix}infocuaca*
 ┃╠➥ *${prefix}mlherolist* [Fanny]
@@ -106,10 +106,10 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}nsfwtrap*
 ┃╠➥ *${prefix}nsfwloli*
 ┃╠➥ *${prefix}nsfwneko*
-┃╠➥ *${prefix}nsfwblowjob
+┃╠➥ *${prefix}nsfwblowjob*
 ┃╠➥ *${prefix}nekonime*
 ┃╠➥ *${prefix}pokemon*
-┃╠➥ *${prefix}randomanime
+┃╠➥ *${prefix}randomanime*
 ┣━━°❀ ❬ _*OWNER*_ ❭ ❀°━━━⊱
 ┃╠➥ *${prefix}bc*
 ┃╠➥ *${prefix}leave*

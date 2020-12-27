@@ -78,7 +78,7 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}kbbi*
 ┃╠➥ *${prefix}map* [kota]
 ┃╠➥ *${prefix}infomotor*
-┃╠➥ *${prefix}Indomobil*
+┃╠➥ *${prefix}Infomobil*
 ┃╠➥ *${prefix}playstore* [error]
 ┃╠➥ *${prefix}igstalk* [barxnl]
 ┃╠➥ *${prefix}resepmasakan*
@@ -96,7 +96,7 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}mlherolist* [Fanny]
 ┃╠➥ *${prefix}randomchat*
 ┃╠➥ *${prefix}walpaperhd*
-┃╠➥ *${prefix}pornhub* [text]
+┃╠➥ *${prefix}pornohub* [text]
 ┃╠➥ *${prefix}testing* [text]
 ┃╠➥ *${prefix}watercolor* [text]
 ┃╠➥ *${prefix}rtext* [text]

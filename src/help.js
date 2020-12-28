@@ -15,8 +15,8 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}tsticker*
 ┃╠➥ *${prefix}nulis*
 ┣━━━━°❀ ❬ _*MEDIA*_ ❭ ❀°━━⊱
-┃╠➥ *${prefix}tts*
-┃╠➥ *${prefix}gtts*
+┃╠➥ *${prefix}tts* [id.en/text kau]
+┃╠➥ *${prefix}gtts* [id.en/text kau]
 ┃╠➥ *${prefix}tiktok*
 ┃╠➥ *${prefix}meme*
 ┃╠➥ *${prefix}memeindo*

@@ -2,33 +2,33 @@ const help = (prefix) => {
 	return ` *Lindy-BOT*                
 Hi👋
 Jangan spam gua Tod🗿
-┏━━━°❀ ❬ _*ABOUT*_ ❭ ❀°━━━┓
+┏━━━°❀ ❬ _*ABOUT*_ ❭ ❀°━━━━━━━━┓
 ┃║
 ┏❉ *${prefix}owner*
 ┣❉ *${prefix}info*
 ┗❉ *${prefix}donasi*
 ┃
-┣━━━°❀ ❬ _*MAKER*_ ❭ ❀°━━━⊱
+┣━━°❀ ❬ _*MAKER*_ ❭ ❀°━━━━━━━━━⊱
 ┃╠➥ *${prefix}sticker*
 ┃╠➥ *${prefix}stiker*
 ┃╠➥ *${prefix}sgif*
 ┃╠➥ *${prefix}tsticker*
 ┃╠➥ *${prefix}nulis*
-┣━━━━°❀ ❬ _*MEDIA*_ ❭ ❀°━━⊱
+┣━━°❀ ❬ _*MEDIA*_ ❭ ❀°━━━━━━━━━⊱
 ┃╠➥ *${prefix}tts* [id.en/text kau]
 ┃╠➥ *${prefix}gtts* [id.en/text kau]
 ┃╠➥ *${prefix}tiktok*
 ┃╠➥ *${prefix}meme*
 ┃╠➥ *${prefix}memeindo*
 ┃╠➥ *${prefix}ocr*
-┣━°❀ ❬ _*DOWNLOAD*_ ❭ ❀°━━⊱
+┣━━°❀ ❬ _*DOWNLOAD*_ ❭ ❀°━━━━━━⊱
 ┃╠➥ *${prefix}yt*
 ┃╠➥ *${prefix}ytsearch* [search yt]
 ┃╠➥ *${prefix}ytmp3* [link]
 ┃╠➥ *${prefix}ytmp4* [link]
 ┃╠➥ *${prefix}tiktok* [link]
 ┃╠➥ *${prefix}joox* [text]
-┣━━°❀ ❬ _*GROUP*_ ❭ ❀°━━━━⊱
+┣━━°❀ ❬ _*GROUP*_ ❭ ❀°━━━━━━━━━⊱
 ┃╠➥ *${prefix}mentionall*
 ┃╠➥ *${prefix}tagall*
 ┃╠➥ *${prefix}promote* [tag]
@@ -45,7 +45,7 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}linkgc*
 ┃╠➥ *${prefix}speed*
 ┃╠➥ *${prefix}testime*
-┣━━━°❀ ❬ _*OTHER*_ ❭ ❀°━━━⊱
+┣━━°❀ ❬ _*OTHER*_ ❭ ❀°━━━━━━━━━⊱
 ┃╠➥ *${prefix}apakah* [text]
 ┃╠➥ *${prefix}kapankah* [text]
 ┃╠➥ *${prefix}bisakah* [text]
@@ -59,7 +59,7 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}cerpen*
 ┃╠➥ *${prefix}chord*
 ┃╠➥ *${prefix}hilih* [text]
-┃╠➥ *${prefix}Wiki* [love]
+┃╠➥ *${prefix}wiki* [text]
 ┃╠➥ *${prefix}text3d*
 ┃╠➥ *${prefix}ninjalogo*
 ┃╠➥ *${prefix}lirik*
@@ -115,7 +115,7 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}infonomor*
 ┃╠➥ *${prefix}quotemaker* [tx|tx|tx]
 ┃╠➥ *${prefix}report* [fitur error bro]
-┣━━°❀ ❬ _*Nsfw & Anime*_ ❭ ❀°━━━⊱
+┣━━°❀ ❬ _*Nsfw & Anime*_ ❭ ❀°━━━━⊱
 ┃╠➥ *${prefix}loli*
 ┃╠➥ *${prefix}waifu*
 ┃╠➥ *${prefix}waifu2*
@@ -128,7 +128,7 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}nekonime*
 ┃╠➥ *${prefix}pokemon*
 ┃╠➥ *${prefix}randomanime*
-┣━━°❀ ❬ _*OWNER*_ ❭ ❀°━━━⊱
+┣━━°❀ ❬ _*OWNER*_ ❭ ❀°━━━━━━━━⊱
 ┃╠➥ *${prefix}bc*
 ┃╠➥ *${prefix}leave*
 ┃╠➥ *${prefix}clearall*
@@ -139,15 +139,27 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}ban*
 ┃╠➥ *${prefix}hidetag*
 ┃╠➥ *${prefix}hidetag2* [Lindy]
-┣━━━━━━━━━━━━━━━━━━⊱
+┣━━━━━━━━━━━━━━━━━━━━━⊱
+┃ *Note:*
+┃ _Untuk sticker send gambar dgn_
+┃ _caption #s/#stiker/#sticker!!_
+┃
+┃ _Untuk sticker gif_
+┃ _send vidio dengan caption #sgif_
+┃ _vidio tidak boleh lebih 10detik_
+┣━━━━━━━━━━━━━━━━━━━━━⊱
 ┃ *Follow to Ig Bot*
 ┃ instagram.com/barxnl 
+┃ *WhatsApp owner*
+┃ wa.me/6282198571732
 ┃
 ┃ *Special Thanks To* 🤝
-┃-MhankBarBar
-┃-Xptn-BOT
-┣━━━━━━━━━━━━━━━━━━⊱ 
-┃ _*Powered By BARXNL-BOT*_
-┗━━━━━━━━━━━━━━━━━━⊱`
+┃- _*MhankBarBar*_
+┃- _*Xptn-BOT*_
+┃- _*AlphaBOT*_
+┃- _*Fajar-BOT*_
+┣━━━━━━━━━━━━━━━━━━━━━⊱ 
+┃    _*Powered By BARXNL-BOT*_
+┗━━━━━━━━━━━━━━━━━━━━━⊱`
 }
 exports.help = help

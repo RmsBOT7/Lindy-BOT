@@ -27,6 +27,7 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}ytmp3* [link]
 ┃╠➥ *${prefix}ytmp4* [link]
 ┃╠➥ *${prefix}tiktok* [link]
+┃╠➥ *${prefix}joox* [text]
 ┣━━°❀ ❬ _*GROUP*_ ❭ ❀°━━━━⊱
 ┃╠➥ *${prefix}mentionall*
 ┃╠➥ *${prefix}tagall*
@@ -43,6 +44,7 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}groupinfo*
 ┃╠➥ *${prefix}linkgc*
 ┃╠➥ *${prefix}speed*
+┃╠➥ *${prefix}testime*
 ┣━━━°❀ ❬ _*OTHER*_ ❭ ❀°━━━⊱
 ┃╠➥ *${prefix}apakah* [text]
 ┃╠➥ *${prefix}kapankah* [text]
@@ -54,7 +56,10 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}tiktokstalk*
 ┃╠➥ *${prefix}url2img*
 ┃╠➥ *${prefix}quotes*
+┃╠➥ *${prefix}cerpen*
+┃╠➥ *${prefix}chord*
 ┃╠➥ *${prefix}hilih* [text]
+┃╠➥ *${prefix}Wiki* [love]
 ┃╠➥ *${prefix}text3d*
 ┃╠➥ *${prefix}ninjalogo*
 ┃╠➥ *${prefix}lirik*
@@ -69,12 +74,15 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}rtext* [teks]
 ┃╠➥ *${prefix}glitch* [teks> | teks]
 ┃╠➥ *${prefix}party* [text]
+┃╠➥ *${prefix}galaxtext* [text]
 ┃╠➥ *${prefix}lovemake* [text]
 ┃╠➥ *${prefix}primbonjodoh* [text|text]
 ┃╠➥ *${prefix}artinama* [nama]
 ┃╠➥ *${prefix}ramalhp* [nomor]
 ┃╠➥ *${prefix}truth*
 ┃╠➥ *${prefix}dare*
+┃╠➥ *${prefix}persengay*
+┃╠➥ *${prefix}bucin*
 ┃╠➥ *${prefix}ssweb* [link]
 ┃╠➥ *${prefix}fototiktok*
 ┃╠➥ *${prefix}say* [text]
@@ -84,7 +92,7 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}Infomobil*
 ┃╠➥ *${prefix}playstore* [error]
 ┃╠➥ *${prefix}igstalk* [barxnl]
-┃╠➥ *${prefix}resepmasakan*
+┃╠➥ *${prefix}resepmasakan* [fix]
 ┃╠➥ *${prefix}indohot*
 ┃╠➥ *${prefix}pinterest* [text]
 ┃╠➥ *${prefix}anjing*
@@ -103,6 +111,8 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}testing* [text]
 ┃╠➥ *${prefix}watercolor* [text]
 ┃╠➥ *${prefix}rtext* [text]
+┃╠➥ *${prefix}shorturl*
+┃╠➥ *${prefix}infonomor*
 ┃╠➥ *${prefix}quotemaker* [tx|tx|tx]
 ┃╠➥ *${prefix}report* [fitur error bro]
 ┣━━°❀ ❬ _*Nsfw & Anime*_ ❭ ❀°━━━⊱

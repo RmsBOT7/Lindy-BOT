@@ -8,7 +8,6 @@
 </p>
 <p align="center">
 <a href="https://github.com/XP-TN"><img title="Author" src="https://img.shields.io/badge/Author-XP-TN-red.svg?style=for-the-badge&logo=github"></a>
-</p>
 
 
 ## Clone this project

@@ -69,4 +69,4 @@ you've just cloned!!
 ## Group
 * [`WhatsApp`](Error waiting)
 ### Donate
-* [`Saweria`](https://saweria.co/donate/agung1)
+* [`Saweria`](https://saweria.co/donate/barxnl)

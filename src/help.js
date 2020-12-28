@@ -44,6 +44,9 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}linkgc*
 ┃╠➥ *${prefix}speed*
 ┣━━━°❀ ❬ _*OTHER*_ ❭ ❀°━━━⊱
+┃╠➥ *${prefix}apakah* [text]
+┃╠➥ *${prefix}kapankah* [text]
+┃╠➥ *${prefix}bisakah* [text]
 ┃╠➥ *${prefix}blocklist*
 ┃╠➥ *${prefix}simi*
 ┃╠➥ *${prefix}wait*

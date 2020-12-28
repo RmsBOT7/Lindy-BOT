@@ -518,6 +518,54 @@ async function starts() {
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
+				case 'naruto':
+					if (!isAnime) return reply('❌ *Harus Mengaktifkan Mode Anime* ❌')
+					anu = await fetchJson(`https://api.vhtear.com/pinterest?query=naruto&apikey=ANTIGRATISNIHANJENKKK`, {method: 'get'})
+					var naru = JSON.parse(JSON.stringify(anu.result));
+					var to =  naru[Math.floor(Math.random() * naru.length)];
+					nye = await getBuffer(to)
+					client.sendMessage(from, nye, image, { caption: 'naruto!!', quoted: mek })
+					break
+				case 'minato':
+					if (!isAnime) return reply('❌ *Harus Mengaktifkan Mode Anime* ❌')
+					anu = await fetchJson(`https://api.vhtear.com/pinterest?query=minato&apikey=ANTIGRATISNIHANJENKKK`, {method: 'get'})
+					var min = JSON.parse(JSON.stringify(anu.result));
+					var ato =  min[Math.floor(Math.random() * min.length)];
+					nye = await getBuffer(ato)
+					client.sendMessage(from, nye, image, { caption: 'minato!!', quoted: mek })
+					break
+				case 'boruto':
+					if (!isAnime) return reply('❌ *Harus Mengaktifkan Mode Anime* ❌')
+					anu = await fetchJson(`https://api.vhtear.com/pinterest?query=boruto&apikey=ANTIGRATISNIHANJENKKK`, {method: 'get'})
+					var bor = JSON.parse(JSON.stringify(anu.result));
+					var uto =  bor[Math.floor(Math.random() * bor.length)];
+					nye = await getBuffer(uto)
+					client.sendMessage(from, nye, image, { caption: 'boruto!!', quoted: mek })
+					break
+				case 'hinata':
+					if (!isAnime) return reply('❌ *Harus Mengaktifkan Mode Anime* ❌')
+					anu = await fetchJson(`https://api.vhtear.com/pinterest?query=hinata&apikey=ANTIGRATISNIHANJENKKK`, {method: 'get'})
+					var hina = JSON.parse(JSON.stringify(anu.result));
+					var ta =  hina[Math.floor(Math.random() * hina.length)];
+					nye = await getBuffer(ta)
+					client.sendMessage(from, nye, image, { caption: 'hinata!!', quoted: mek })
+					break
+				case 'sasuke':
+					if (!isAnime) return reply('❌ *Harus Mengaktifkan Mode Anime* ❌')
+					anu = await fetchJson(`https://api.vhtear.com/pinterest?query=sasuke&apikey=ANTIGRATISNIHANJENKKK`, {method: 'get'})
+					var sasu = JSON.parse(JSON.stringify(anu.result));
+					var ke =  sasu[Math.floor(Math.random() * sasu.length)];
+					nye = await getBuffer(ke)
+					client.sendMessage(from, nye, image, { caption: 'sasuke!!', quoted: mek })
+					break
+				case 'sakura':
+					if (!isAnime) return reply('❌ *Harus Mengaktifkan Mode Anime* ❌')
+					anu = await fetchJson(`https://api.vhtear.com/pinterest?query=sakura&apikey=ANTIGRATISNIHANJENKKK`, {method: 'get'})
+					var sak = JSON.parse(JSON.stringify(anu.result));
+					var kura =  sak[Math.floor(Math.random() * sak.length)];
+					nye = await getBuffer(kura)
+					client.sendMessage(from, nye, image, { caption: 'sakura!!', quoted: mek })
+					break
 				case 'party':
 					if (args.length < 1) return reply(mess.blank)
 					part = body.slice(7)

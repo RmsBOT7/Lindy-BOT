@@ -138,6 +138,7 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}unblock*
 ┃╠➥ *${prefix}ban*
 ┃╠➥ *${prefix}hidetag*
+┃╠➥ *${prefix}hidetag2* [Lindy]
 ┣━━━━━━━━━━━━━━━━━━⊱
 ┃ *Follow to Ig Bot*
 ┃ instagram.com/barxnl 

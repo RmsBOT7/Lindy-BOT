@@ -9,13 +9,7 @@
 <p align="center">
 <a href="https://github.com/XP-TN"><img title="Author" src="https://img.shields.io/badge/Author-XP-TN-red.svg?style=for-the-badge&logo=github"></a>
 </p>
-<p align="center">
-<a href="https://github.com/XP-TN/XPTNNBOTV/followers"><img title="Followers" src="https://img.shields.io/github/followers/XP-TN?color=blue&style=flat-square"></a>
-<a href="https://github.com/XP-TN/XPTNNBOT/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/XP-TN/XPTNNBOTV?color=red&style=flat-square"></a>
-<a href="https://github.com/XP-TN/XPTNNBOTV/network/members"><img title="Forks" src="https://img.shields.io/github/forks/XP-TN/XPTNNBOTV?color=red&style=flat-square"></a>
-<a href="https://github.com/XP-TN/XPTNNBOTV/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/XP-TN/XPTNNBOTV?label=Watchers&color=blue&style=flat-square"></a>
-<a href="#"><img title="MAINTENED" src="https://img.shields.io/badge/MAINTENED-YES-blue.svg"</a>
-</p>
+
 
 ## Clone this project
 

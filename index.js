@@ -75,7 +75,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Halo @${num.split('@')[0]}\nSelamat datang di group Jangan Lupa INTRO Yang Baru!..Betah betah yah disini🎉 :v *${mdata.subject}*`
+				teks = `Halo @${num.split('@')[0]}\nSelamat datang di group *${mdata.subject}*\n Jangan lupa intro kau🗿, Betah-betah yah di sini🖤`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -139,7 +139,7 @@ async function starts() {
 
 			const botNumber = client.user.jid
 			const ownerNumber = ["6282198571732@s.whatsapp.net"] // replace this with your number
-			const adminbotnumber = ["6281250242791@s.whatsapp.net"]
+			const adminbotnumber = ["628970065907@s.whatsapp.net"]
 			const frendsowner = ["6282198571732@s.whatsapp.net"]
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
@@ -588,6 +588,7 @@ async function starts() {
                 client.sendMessage(from, 'Succes, Ganti Deskripsi Grup', text, {quoted: mek})
                 break
 				case 'gtts':
+                                case 'tts':
 					if (args.length < 1) return client.sendMessage(from, 'Kode bahasanya mana om?', text, {quoted: mek})
 					const gtts = require('./lib/gtts')(args[0])
 					if (args.length < 2) return client.sendMessage(from, 'Textnya mana om', text, {quoted: mek})
@@ -650,7 +651,7 @@ async function starts() {
 					tod = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
 					client.sendMessage(from, tod, image, { quoted: mek, caption: '*Dare*\n\n'+ der })
 					break				
-                case `assalamualaikum`:
+                case `Assalamualaikum`:
                client.reply(from, `Waalaikumsalam ${pushname}:)`)
                 break
                 case 'speed':
@@ -782,7 +783,7 @@ async function starts() {
 					wibu = ` ➸ *nama* ${anu.result.nama} ➸ *deskripsi* ${anu.result.deskripsi}`
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: wibu})
 					break
-				case 'randomcat':
+				case 'randomchat':
 					reply(mess.wait)
 					anu = await fetchJson(`https://api.vhtear.com/randomcat?apikey=ANTIGRATISNIHANJENKKK`)
 					if (anu.error) return reply(anu.error)
@@ -799,7 +800,7 @@ async function starts() {
 				    try {
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/randomanime`, {method: 'get'})
 						buffer = await getBuffer(res.result)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'ni randomanime!'})
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Cintai anime >\\<'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
 						reply('❌ *ERROR* ❌')
@@ -810,7 +811,7 @@ async function starts() {
 						if (!isNsfw) return reply('❌ *FALSE* ❌')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/hentai`, {method: 'get'})
 						buffer = await getBuffer(res.result)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'hentai teros'})
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Ni Kontol, jangan minta lagi kau!!'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
 						reply('❌ *ERROR* ❌')
@@ -843,7 +844,7 @@ async function starts() {
 						if (!isNsfw) return reply('❌ *FALSE* ❌')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwneko`, {method: 'get'})
 						buffer = await getBuffer(res.result)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'ni anjim'})
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'nih Amjim🗿'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
 						reply('❌ *ERROR* ❌')
@@ -854,7 +855,7 @@ async function starts() {
 						if (!isNsfw) return reply('❌ *FALSE* ❌')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwtrap`, {method: 'get'})
 						buffer = await getBuffer(res.result)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'ni anjim'})
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Nih Amjim🗿'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
 						reply('❌ *ERROR* ❌')
@@ -1271,7 +1272,7 @@ async function starts() {
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += '\n\n'
 					for (let mem of groupMembers) {
-						teks += `*😘* ${mem.jid.split('@')[0]}\n`
+						teks += `*🔥* ${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
 					mentions(teks, members_id, true)

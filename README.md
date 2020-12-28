@@ -7,7 +7,6 @@
 <a href="#"><img title="BARXNL-BOT" src="https://img.shields.io/badge/BARXNL-BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://github.com/XP-TN"><img title="Author" src="https://img.shields.io/badge/Author-XP-TN-red.svg?style=for-the-badge&logo=github"></a>
 
 
 ## Clone this project

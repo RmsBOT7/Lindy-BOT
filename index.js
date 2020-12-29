@@ -221,7 +221,10 @@ async function starts() {
 					break
 				case 'stiker':
 				case 'sticker':
-					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
+				case 'sgif':	
+                                case 's':
+                                case 'stickergif':
+                                       if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await client.downloadAndSaveMediaMessage(encmedia)
 						ran = getRandom('.webp')
@@ -1420,7 +1423,7 @@ async function starts() {
 					break
 				case 'alay':
 					anu = await fetchJson(`https://arugaz.herokuapp.com/api/bapakfont?kata=${body.slice(6)}`, {method: 'get'})
-					reply('anu.result)
+					reply(anu.result)
 					break
 				case 'artinama':
 					if (args.length < 1) return reply('Apa yang mau dicari um?')

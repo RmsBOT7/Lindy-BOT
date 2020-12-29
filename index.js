@@ -1602,7 +1602,24 @@ async function starts() {
 						reply('1 untuk mengaktifkan, 0 untuk menonaktifkan')
 					}
 					break
-			    case 'nsfw':
+			      case 'openanime':
+					if (!isGroup) return reply(mess.only.group)
+					if (!isGroupAdmins) return reply(mess.only.admin)
+					if (args.length < 1) return reply('Hmmmm')
+					if (Number(args[0]) === 1) {
+						if (isAnime) return reply('Mode anime sudah aktif')
+						anime.push(from)
+						fs.writeFileSync('./src/anime.json', JSON.stringify(anime))
+						reply('Sukses mengaktifkan mode anime di group ini ✔️')
+					} else if (Number(args[0]) === 0) {
+						anime.splice(from, 1)
+						fs.writeFileSync('./src/anime.json', JSON.stringify(anime))
+						reply('Sukes menonaktifkan mode anime di group ini ✔️')
+					} else {
+						reply('1 untuk mengaktifkan, 0 untuk menonaktifkan')
+					}
+					break
+                               case 'nsfw':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Hmmmm')

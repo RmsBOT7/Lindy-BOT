@@ -30,7 +30,10 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}joox* [text]
 ┣━━°❀ ❬ _*GROUP*_ ❭ ❀°━━━━━━━━━⊱
 ┃╠➥ *${prefix}mentionall*
-┃╠➥ *${prefix}tagall*
+┃╠➥ *${prefix}mentionall1*
+┃╠➥ *${prefix}mentionall2*
+┃╠➥ *${prefix}mentionall3*
+┃╠➥ *${prefix}tagall
 ┃╠➥ *${prefix}promote* [tag]
 ┃╠➥ *${prefix}demote* [tag]
 ┃╠➥ *${prefix}kick* [tag]
@@ -89,6 +92,7 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}ssweb* [link]
 ┃╠➥ *${prefix}fototiktok*
 ┃╠➥ *${prefix}say* [text]
+┃╠➥ *${prefix}alay* [text]
 ┃╠➥ *${prefix}kbbi*
 ┃╠➥ *${prefix}map* [kota]
 ┃╠➥ *${prefix}infomotor*

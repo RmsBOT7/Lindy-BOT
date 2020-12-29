@@ -618,7 +618,20 @@ async function starts() {
 					const tak = wa[Math.floor(Math.random() * wa.length)]
 					client.sendMessage(from, 'Pertanyaan : *'+watak+'*\n\nJawaban : '+ tak, text, { quoted: mek })
 					break
-				case 'hobby':
+				case 'anime':
+					teks = body.slice(7)
+					anu = await fetchJson(`https://mnazria.herokuapp.com/api/anime?query=${teks}`, {method: 'get'})
+					reply('anime nya ni '+teks+' adalah :\n\n'+anu.title)
+					break
+                                case 'hentai':
+					if (!isNsfw) return reply('❌ *Harus mengaktifkan mode nsfw* ❌')
+					anu = await fetchJson(`https://api.vhtear.com/pinterest?query=animehentai&apikey=ANTIGRATISNIHANJENKKK`, {method: 'get'})
+					var hen = JSON.parse(JSON.stringify(anu.result));
+					var tai =  hen[Math.floor(Math.random() * hen.length)];
+					nye = await getBuffer(tai)
+					client.sendMessage(from, nye, image, { caption: 'hentai!!', quoted: mek })
+					break
+                                case 'hobby':
 					hobby = body.slice(1)
 					const hob =['Memasak','Membantu Atok','Mabar','Nobar','Sosmedtan','Membantu Orang lain','Nonton Anime','Nonton Drakor','Naik Motor','Nyanyi','Menari','Bertumbuk','Menggambar','Foto fotoan Ga jelas','Maen Game','Berbicara Sendiri']
 					const by = hob[Math.floor(Math.random() * hob.length)]

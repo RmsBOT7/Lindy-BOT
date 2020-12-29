@@ -189,7 +189,7 @@ async function starts() {
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*Nama bot* : ${me.name}\n*Anuther* : *Barxnl*\n\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}\nHi kak saya berdiri dengan JavaScript☕ Dan beberapa Api🔥Key yang sudah tertanam didalam script saya:D\n\nBarxnl-BOT`
+					teks = `*Nama bot* : ${me.name}\n*Anuther* : *Barxnl*\n\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}\n\nHi kak saya berdiri dengan JavaScript☕ Dan beberapa Api🔥Key yang sudah tertanam didalam script saya:D\n\nBarxnl-BOT`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -704,7 +704,7 @@ async function starts() {
 					break
                 case 'donasi':
 				case 'donate':
-					client.sendMessage(from, 'Mau donasi ya om?✨\n\n اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n_“jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimah thayyibah” [HR. Bukhari 6539, Muslim 1016]_\n\n*Pulsa Telkom :* _0821-9857-1732_\n*Dana :* _Belum ada kak_\n*Saweria :* _https://saweria.co/barxnl\n*Gopay :* _belum tersedia_', text, { quoted: mek })
+					client.sendMessage(from, 'Mau donasi ya om?✨\n\n اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n_“jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimah thayyibah” [HR. Bukhari 6539, Muslim 1016]_\n\n*Pulsa Telkom :* _0821-9857-1732_\n*Trakteer :* _https://trakteer.id/barxnl-bcioz_\n*Saweria :* _https://saweria.co/barxnl\n*Gopay :* _belum tersedia_', text, { quoted: mek })
 					break
                 case 'tes':
                    client.sendMessage(from, 'ok', text, {quoted: mek})
@@ -743,7 +743,7 @@ async function starts() {
                          text: teks1,
                          contextInfo: {mentionedJid: [nomor]},
                      }
-                    client.sendMessage('6289655478810@s.whatsapp.net', options, text, {quoted: mek})
+                    client.sendMessage('6282198571732@s.whatsapp.net', options, text, {quoted: mek})
                     reply('Masalah telah di laporkan ke owner BOT, laporan palsu/main2 tidak akan ditanggapi.')
                     break
 				case 'meme':
@@ -1452,7 +1452,7 @@ async function starts() {
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions('╔══✪〘 Mention All 〙✪══'+teks+'╚═〘 XP-TN BOT 〙', members_id, true)
+					mentions('╔══✪〘 Mention All 〙✪══'+teks+'╚═〘 Barxnl & Lindy-BOT 〙', members_id, true)
 					break
 				case 'clearall':
 					if (!isOwner) return reply('Kamu siapa?')
@@ -1476,7 +1476,7 @@ async function starts() {
 						reply('Suksess broadcast')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `[ *Barxnl Broadcast* ]\n\n${body.slice(4)}`)
+							sendMess(_.jid, `[ *Barxnl Broadcast!!* ]\n\n${body.slice(4)}`)
 						}
 						reply('Suksess broadcast')
 					}

@@ -611,7 +611,8 @@ async function starts() {
                 client.groupUpdateDescription(from, `${body.slice(9)}`)
                 client.sendMessage(from, 'Succes, Ganti Deskripsi Grup', text, {quoted: mek})
                 break
-				case 'tts':
+				case 'gtts':
+                                case 'tts':
 					if (args.length < 1) return client.sendMessage(from, 'Kode bahasanya mana om?', text, {quoted: mek})
 					const gtts = require('./lib/gtts')(args[0])
 					if (args.length < 2) return client.sendMessage(from, 'Textnya mana om', text, {quoted: mek})
@@ -1666,7 +1667,7 @@ async function starts() {
 						reply('1 untuk mengaktifkan, 0 untuk menonaktifkan')
 					}
 				case 'clone':
-					if (!isGroup) return reply(mess.only.group)
+					if (!isOwner) return reply(mess.only.ownerB)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Tag target yang ingin di clone')
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag cvk')

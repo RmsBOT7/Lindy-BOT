@@ -87,7 +87,6 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}ramalhp* [nomor]
 ┃╠➥ *${prefix}truth*
 ┃╠➥ *${prefix}dare*
-┃╠➥ *${prefix}persengay*
 ┃╠➥ *${prefix}bucin*
 ┃╠➥ *${prefix}ssweb* [link]
 ┃╠➥ *${prefix}fototiktok*
@@ -115,7 +114,7 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}randomchat*
 ┃╠➥ *${prefix}walpaperhd*
 ┃╠➥ *${prefix}pornohub* [text]
-┃╠➥ *${prefix}testing* [text]
+┃╠➥ *${prefix}testing2* [text]
 ┃╠➥ *${prefix}watercolor* [text]
 ┃╠➥ *${prefix}rtext* [text]
 ┃╠➥ *${prefix}shorturl*

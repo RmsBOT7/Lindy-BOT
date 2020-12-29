@@ -1416,7 +1416,7 @@ async function starts() {
 					break
 				case 'alay':
 					anu = await fetchJson(`https://arugaz.herokuapp.com/api/bapakfont?kata=${body.slice(6)}`, {method: 'get'})
-					reply('+anu.result)
+					reply('anu.result)
 					break
 				case 'artinama':
 					if (args.length < 1) return reply('Apa yang mau dicari um?')

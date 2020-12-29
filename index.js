@@ -439,7 +439,11 @@ async function starts() {
 					anu = await fetchJson(`https://api.vhtear.com/primbonjodoh?nama=${gbl1}&pasangan=${gbl2}&apikey=ANTIGRATISNIHANJENKKK`)
 					reply(anu.result.hasil)
 					break
-				case 'ramaljadian':
+				case 'say':
+                                       const asu = body.slice(4)
+                                       if (argz.lenght >= 1) return client.sendText(from, asu)
+                                       break
+                                case 'ramaljadian':
 					var gh = body.slice(10)
 					var gbl1 = gh.split("|")[0];
 					var gbl2 = gh.split("|")[1];

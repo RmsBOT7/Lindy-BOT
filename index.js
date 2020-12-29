@@ -25,11 +25,11 @@ const anime = JSON.parse(fs.readFileSync('./src/anime.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 const vcard = 'BEGIN:VCARD\n' // ANAK ANJING MAU NGAPAIN?
             + 'VERSION:3.0\n' // NGAPAIN LAGI KALO GA MAU NUMPANG NAMA DOANG XIXIXIXI
-            + 'FN:XPTN\n' // MENDING LU TOBAT SU!
-            + 'ORG:Creator XPTN;\n' // KASIH CREDITS GUA SU!!!
-            + 'TEL;type=CELL;type=VOICE;waid=6289655478810:+62 896-5547-8810\n' // JANGAN KEK BABI SU
+            + 'FN:Barxnl\n' // MENDING LU TOBAT SU!
+            + 'ORG:Creator Barxnl-BOT;\n' // KASIH CREDITS GUA SU!!!
+            + 'TEL;type=CELL;type=VOICE;waid=6282198571732:+62 821-9857-1732\n' // JANGAN KEK BABI SU
             + 'END:VCARD'
-prefix = '$'
+prefix = '#'
 blocked = []
 
 function kyun(seconds){
@@ -76,7 +76,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Halo @${num.split('@')[0]}\nSelamat datang di group Jangan Lupa INTRO Yang Baru Masuk Jangan lupa save nomor owner bot ketik $creator :v *${mdata.subject}*`
+				teks = `Halo @${num.split('@')[0]}\nSelamat datang di group *${mdata.subject}* Jangan lupa intro ente!\n*Nama:*\n*Umur:*\n*Kota:*\n\nBarxnl-BOT`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -86,7 +86,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Semoga Tenang Di Alam Sana @${num.split('@')[0]}👋`
+				teks = `Semoga Tenang Di Alam Sana @${num.split('@')[0]}👋 Al-fatihah!!`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -139,8 +139,8 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["6289655478810@s.whatsapp.net"] // replace this with your number
-			const adminbotnumber = ["6282387711916@s.whatsapp.net"]
+			const ownerNumber = ["6282198571732@s.whatsapp.net"] // replace this with your number
+			const adminbotnumber = ["628970065907@s.whatsapp.net"]
 			const frendsowner = ["6282198571732@s.whatsapp.net"]
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
@@ -189,7 +189,7 @@ async function starts() {
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*Nama bot* : ${me.name}\n*Anuther* : *XPTN*\n*FRENDS* : ALFA GANS\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}`
+					teks = `*Nama bot* : ${me.name}\n*Anuther* : *Barxnl*\n\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}\nHi kak saya berdiri dengan JavaScript☕ Dan beberapa Api🔥Key yang sudah tertanam didalam script saya:D\n\nBarxnl-BOT`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -317,7 +317,7 @@ async function starts() {
 						reply(`Kirim gambar dengan caption ${prefix}sticker atau tag gambar yang sudah dikirim`)
 					}
 					break
-			case 'creator':
+			case 'owner':
                  client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
                  client.sendMessage(from, 'itu pacar ku eh owner ku ><',MessageType.text, { quoted: mek} )
                  break
@@ -422,7 +422,7 @@ async function starts() {
 					buffer = await getBuffer(`https://api.vhtear.com/galaxytext?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
-                case 'pronlogo':
+                case 'pornohub':
 					var gh = body.slice(10)
 					var gbl1 = gh.split("|")[0];
 					var gbl2 = gh.split("|")[1];
@@ -697,7 +697,7 @@ async function starts() {
 					break
                 case 'donasi':
 				case 'donate':
-					client.sendMessage(from, 'Mau donasi ya om?✨\n\n اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n_“jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimah thayyibah” [HR. Bukhari 6539, Muslim 1016]_\n\n*Pulsa Indosat :* _0896-5547-8810_\n*Dana :* _0896-5547-8810_\n*Saweria :* _https://saweria.co/agung1\n*Gopay :* _belum tersedia_', text, { quoted: mek })
+					client.sendMessage(from, 'Mau donasi ya om?✨\n\n اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n_“jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimah thayyibah” [HR. Bukhari 6539, Muslim 1016]_\n\n*Pulsa Telkom :* _0821-9857-1732_\n*Dana :* _Belum ada kak_\n*Saweria :* _https://saweria.co/barxnl\n*Gopay :* _belum tersedia_', text, { quoted: mek })
 					break
                 case 'tes':
                    client.sendMessage(from, 'ok', text, {quoted: mek})
@@ -828,7 +828,7 @@ async function starts() {
 					wibu = ` ➸ *nama* ${anu.result.nama} ➸ *deskripsi* ${anu.result.deskripsi}`
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: wibu})
 					break
-				case 'randomcat':
+				case 'randomchat':
 					reply(mess.wait)
 					anu = await fetchJson(`https://api.vhtear.com/randomcat?apikey=ANTIGRATISNIHANJENKKK`)
 					if (anu.error) return reply(anu.error)
@@ -1347,7 +1347,7 @@ async function starts() {
 					break
 				case 'tstiker':
 				case 'tsticker':
-					if (args.length < 1) return reply('Textnya mana um?')
+                                        if (args.length < 1) return reply('Textnya mana um?')
 					ranp = getRandom('.png')
 					rano = getRandom('.webp')
 					teks = body.slice(9).trim()
@@ -1361,7 +1361,7 @@ async function starts() {
 						fs.unlinkSync(rano)
 					})
 					break
-				case 'otagall2':
+				case 'mentionall2':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
@@ -1373,7 +1373,7 @@ async function starts() {
 					}
 					mentions(teks, members_id, true)
 					break
-			    case 'otagall3':
+			    case 'mentionall3':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
@@ -1414,9 +1414,9 @@ async function starts() {
 						client.groupSettingChange(from, GroupSettingChange.messageSend, true)
 					}
 					break
-				case 'say':
+				case 'alay':
 					anu = await fetchJson(`https://arugaz.herokuapp.com/api/bapakfont?kata=${body.slice(6)}`, {method: 'get'})
-					reply('nianjim\n\n'+anu.result)
+					reply('+anu.result)
 					break
 				case 'artinama':
 					if (args.length < 1) return reply('Apa yang mau dicari um?')
@@ -1435,7 +1435,7 @@ async function starts() {
 					}
 					mentions(teks, members_id, true)
 					break
-			    case 'otagall':
+			    case 'mentionall':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
@@ -1469,7 +1469,7 @@ async function starts() {
 						reply('Suksess broadcast')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `[ *XPTN Broadcast* ]\n\n${body.slice(4)}`)
+							sendMess(_.jid, `[ *Barxnl Broadcast* ]\n\n${body.slice(4)}`)
 						}
 						reply('Suksess broadcast')
 					}
@@ -1542,7 +1542,7 @@ async function starts() {
 						client.deleteMessage(from, mentioned)
 					}
 					break
-			    case 'unpromote':
+			    case 'demote':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -1702,7 +1702,7 @@ async function starts() {
 						reply('Suksess broadcast')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `[ *admin bot Broadcast* ]\n\n${body.slice(4)}`)
+							sendMess(_.jid, `[ *Doi Owner Broadcast* ]\n\n${body.slice(4)}`)
 						}
 						reply('Suksess broadcast')
 					}

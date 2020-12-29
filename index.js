@@ -363,7 +363,21 @@ async function starts() {
 					client.sendMessage(from, '60', text) // ur cods
 					}, 10000) // 1000 = 1s,
 					break
-				case 'linkgroup':
+				case 'setname':
+                if (!isGroup) return reply(mess.only.group)
+			    if (!isGroupAdmins) return reply(mess.only.admin)
+				if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+                client.groupUpdateSubject(from, `${body.slice(9)}`)
+                client.sendMessage(from, 'Succes, Ganti Nama Grup', text, {quoted: mek})
+                break
+                case 'setdesc':
+                if (!isGroup) return reply(mess.only.group)
+			    if (!isGroupAdmins) return reply(mess.only.admin)
+				if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+                client.groupUpdateDescription(from, `${body.slice(9)}`)
+                client.sendMessage(from, 'Succes, Ganti Deskripsi Grup', text, {quoted: mek})
+                break
+                                case 'linkgroup':
 				case 'linkgrup':
 				case 'linkgc':
 				    if (!isGroup) return reply(mess.only.group)

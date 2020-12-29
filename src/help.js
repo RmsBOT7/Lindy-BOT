@@ -38,6 +38,9 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}add* [62xxx]
 ┃╠➥ *${prefix}welcome* [1/0]
 ┃╠➥ *${prefix}setpp*
+┃╠➥ *${prefix}setname*
+┃╠➥ *${prefix}setdesc*
+┃╠➥ *${prefix}openanime* [1/0]
 ┃╠➥ *${prefix}nsfw* [1/0]
 ┃╠➥ *${prefix}tagme*
 ┃╠➥ *${prefix}simih* [1/0]
@@ -112,6 +115,10 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}watercolor* [text]
 ┃╠➥ *${prefix}rtext* [text]
 ┃╠➥ *${prefix}shorturl*
+┃╠➥ *${prefix}rate*
+┃╠➥ *${prefix}hobby*
+┃╠➥ *${prefix}watak*
+┃╠➥ *${prefix}epep*
 ┃╠➥ *${prefix}infonomor*
 ┃╠➥ *${prefix}quotemaker* [tx|tx|tx]
 ┃╠➥ *${prefix}report* [fitur error bro]
@@ -128,6 +135,14 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}nekonime*
 ┃╠➥ *${prefix}pokemon*
 ┃╠➥ *${prefix}randomanime*
+┃╠➥ *${prefix}hentai*
+┃╠➥ *${prefix}anime*
+┃╠➥ *${prefix}naruto*
+┃╠➥ *${prefix}sasuke*
+┃╠➥ *${prefix}hinata*
+┃╠➥ *${prefix}sakura*
+┃╠➥ *${prefix}boruto*
+┃╠➥ *${prefix}minato*
 ┣━━°❀ ❬ _*OWNER*_ ❭ ❀°━━━━━━━━⊱
 ┃╠➥ *${prefix}bc*
 ┃╠➥ *${prefix}leave*

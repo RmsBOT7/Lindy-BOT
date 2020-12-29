@@ -76,7 +76,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Halo @${num.split('@')[0]}\nSelamat datang di group *${mdata.subject}* Jangan lupa intro ente!\n*Nama:*\n*Umur:*\n*Kota:*\n\nBarxnl-BOT`
+				teks = `Halo @${num.split('@')[0]}\nSelamat datang di group *${mdata.subject}* Jangan lupa intro ente!\n*Nama:*\n*Umur:*\n*Kota:*\n\n*Follow ya ngab*\nistagram.com/barxnl `
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -460,7 +460,7 @@ async function starts() {
 					if (teks.length > 9) return reply('Teksnya kepanjangan, maksimal 9 karakter')
 					reply(mess.wait)
 					buffer = await getBuffer(`https://api.vhtear.com/hartatahta?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Harta Tahta '+teks})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Harta Tahta '+teks}\n\n'Tuh kak dah jadi support saya truss yh lewat Ig:istagram.com/barxnl')
 					break
 				case 'testingg':
 					if (args.length < 1) return reply(mess.blank)
@@ -1122,7 +1122,7 @@ async function starts() {
 					var naru = JSON.parse(JSON.stringify(anu.result));
 					var to =  naru[Math.floor(Math.random() * naru.length)];
 					nye = await getBuffer(to)
-					client.sendMessage(from, nye, image, { caption: 'naruto!!', quoted: mek })
+					client.sendMessage(from, nye, image, { caption: 'naruto!! istagram.com/barxnl', quoted: mek })
 					break
 				case 'minato':
 					if (!isAnime) return reply('❌ *Harus Mengaktifkan Mode Anime* ❌')
@@ -1130,7 +1130,7 @@ async function starts() {
 					var min = JSON.parse(JSON.stringify(anu.result));
 					var ato =  min[Math.floor(Math.random() * min.length)];
 					nye = await getBuffer(ato)
-					client.sendMessage(from, nye, image, { caption: 'minato!!', quoted: mek })
+					client.sendMessage(from, nye, image, { caption: 'istagram.com/barxnl', quoted: mek })
 					break
 				case 'boruto':
 					if (!isAnime) return reply('❌ *Harus Mengaktifkan Mode Anime* ❌')
@@ -1138,7 +1138,7 @@ async function starts() {
 					var bor = JSON.parse(JSON.stringify(anu.result));
 					var uto =  bor[Math.floor(Math.random() * bor.length)];
 					nye = await getBuffer(uto)
-					client.sendMessage(from, nye, image, { caption: 'boruto!!', quoted: mek })
+					client.sendMessage(from, nye, image, { caption: 'istagram.com/barxnl', quoted: mek })
 					break
 				case 'hinata':
 					if (!isAnime) return reply('❌ *Harus Mengaktifkan Mode Anime* ❌')
@@ -1146,7 +1146,7 @@ async function starts() {
 					var hina = JSON.parse(JSON.stringify(anu.result));
 					var ta =  hina[Math.floor(Math.random() * hina.length)];
 					nye = await getBuffer(ta)
-					client.sendMessage(from, nye, image, { caption: 'hinata!!', quoted: mek })
+					client.sendMessage(from, nye, image, { caption: 'istagram.com/barxnl', quoted: mek })
 					break
 				case 'sasuke':
 					if (!isAnime) return reply('❌ *Harus Mengaktifkan Mode Anime* ❌')
@@ -1154,7 +1154,7 @@ async function starts() {
 					var sasu = JSON.parse(JSON.stringify(anu.result));
 					var ke =  sasu[Math.floor(Math.random() * sasu.length)];
 					nye = await getBuffer(ke)
-					client.sendMessage(from, nye, image, { caption: 'sasuke!!', quoted: mek })
+					client.sendMessage(from, nye, image, { caption: 'istagram.com/barxnl', quoted: mek })
 					break
 				case 'sakura':
 					if (!isAnime) return reply('❌ *Harus Mengaktifkan Mode Anime* ❌')
@@ -1162,7 +1162,7 @@ async function starts() {
 					var sak = JSON.parse(JSON.stringify(anu.result));
 					var kura =  sak[Math.floor(Math.random() * sak.length)];
 					nye = await getBuffer(kura)
-					client.sendMessage(from, nye, image, { caption: 'sakura!!', quoted: mek })
+					client.sendMessage(from, nye, image, { caption: 'istagram.com/barxnl', quoted: mek })
 					break
 					//animefoto
 				case 'unta':
@@ -1178,7 +1178,7 @@ async function starts() {
 					var hen = JSON.parse(JSON.stringify(anu.result));
 					var tai =  hen[Math.floor(Math.random() * hen.length)];
 					nye = await getBuffer(tai)
-					client.sendMessage(from, nye, image, { caption: 'hentai!!', quoted: mek })
+					client.sendMessage(from, nye, image, { caption: 'hentai!! istagram.com/barxnl', quoted: mek })
 					break
 				case 'anjing':
 					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=anjing`, {method: 'get'})
@@ -1297,7 +1297,7 @@ async function starts() {
 					reply(mess.wait)
 					anu = await fetchJson(`https://api.vhtear.com/igprofile?query=${ige}&apikey=ANTIGRATISNIHANJENKKK`, {method: 'get'})
 					buffer = await getBuffer(anu.result.picture)
-					capt = `User Ditemukan!!\n\n*➸ Nama :* ${anu.result.full_name}\n*➸ Username :* ${anu.result.username}\n*➸ Followers :* ${anu.result.follower}\n*➸ Mengikuti :* ${anu.result.follow}\n*➸ Jumlah Post :* ${anu.result.post_count}\n*➸ Private :* ${anu.result.is_private}\n*➸ Bio :* ${anu.result.biography}`
+					capt = `User Ditemukan!!\n\n*➸ Nama :* ${anu.result.full_name}\n*➸ Username :* ${anu.result.username}\n*➸ Followers :* ${anu.result.follower}\n*➸ Mengikuti :* ${anu.result.follow}\n*➸ Jumlah Post :* ${anu.result.post_count}\n*➸ Private :* ${anu.result.is_private}\n*➸ Bio :* ${anu.result.biography}\n\nKak hihi🙂\nistagram.com/barxnl`
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: capt})
 					break
 				case 'infomobil':

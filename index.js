@@ -456,7 +456,16 @@ async function starts() {
 					buffer = await getBuffer(`https://api.vhtear.com/hartatahta?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Harta Tahta '+teks})
 					break
-				case 'lovemake':
+				case 'epep':
+					if (args.length < 1) return reply(mess.blank)
+	                                tels = body.slice(7)
+				        if (tels.ength > 15) return reply('Teksnya kepanjangan, maksimal 20 karakter')
+					reply(mess.wait)
+				        anu = await fetchJson(`https://zeksapi.herokuapp.com/api/epep?text=${tels}&apikey=xptnbot`, {method: 'get'})
+				        buff = await getBuffer(anu.result)
+				        client.sendMessage(from, buff, image, {quoted: mek})
+					break
+                                case 'lovemake':
 					if (args.length < 1) return reply('Teksnya mana um')
 					love = body.slice(10)
 					if (love.length > 12) return reply('Teksnya kepanjangan, maksimal 9 karakter')

@@ -76,7 +76,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Halo @${num.split('@')[0]}\nSelamat datang di group *${mdata.subject}* Jangan lupa intro ente!\n*Nama:*\n*Umur:*\n*Kota:*\n\nBarxnl-BOT`
+				teks = `Halo @${num.split('@')[0]}\nSelamat datang di group *${mdata.subject}* Jangan lupa intro ente!\n\n*Nama:*\n*Umur:*\n*Kota:*\n\n*Follow Ig:*\ninstagram.com/barxnl`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -435,7 +435,7 @@ async function starts() {
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
-				case 'snowrrite':
+				case 'snowrite':
 					var gh = body.slice(10)
 					var gbl7 = gh.split("|")[0];
 					var gbl8 = gh.split("|")[1];
@@ -479,7 +479,19 @@ async function starts() {
 					anu = await fetchJson(`https://api.vhtear.com/primbonjodoh?nama=${gbl1}&pasangan=${gbl2}&apikey=ANTIGRATISNIHANJENKKK`)
 					reply(anu.result.hasil)
 					break
-				case 'say':
+				case 'qrcode':
+					const tex = encodeURIComponent(body.slice(8))
+					if (!tex) return client.sendMessage(from, 'masukan teks/url!', text, {quoted: mek})
+					const buff = await getBuffer(`https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${tex}`)
+					client.sendMessage(from, buff, image, {quoted: mek})
+					break
+                                case 'wikien':
+					if (args.length < 1) return reply('𝐦𝐚𝐬𝐮𝐤𝐤𝐚𝐧 𝐤𝐚𝐭𝐚 𝐤𝐮𝐧𝐜𝐢')
+					tels = body.slice(8)					
+					anu = await fetchJson(`https://arugaz.herokuapp.com/api/wikien?q=${tels}`, {method: 'get'})
+					reply(anu.result)
+					break 
+                                case 'say':
                                        const asu = body.slice(4)
                                        if (argz.lenght >= 1) return client.sendText(from, asu)
                                        break

@@ -33,7 +33,7 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}mentionall*
 ┃╠➥ *${prefix}mentionall2*
 ┃╠➥ *${prefix}mentionall3*
-┃╠➥ *${prefix}tagall
+┃╠➥ *${prefix}tagall*
 ┃╠➥ *${prefix}promote* [tag]
 ┃╠➥ *${prefix}demote* [tag]
 ┃╠➥ *${prefix}kick* [tag]
@@ -126,7 +126,7 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}epep*
 ┃╠➥ *${prefix}infonomor*
 ┃╠➥ *${prefix}quotemaker* [tx|tx|tx]
-┃╠➥ *${prefix}report* [fitur error bro]
+┃╠➥ *${prefix}report* [text] (Report ke owner)
 ┣━━°❀ ❬ _*Nsfw & Anime*_ ❭ ❀°━━━━⊱
 ┃╠➥ *${prefix}loli*
 ┃╠➥ *${prefix}waifu*
@@ -141,7 +141,6 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}pokemon*
 ┃╠➥ *${prefix}randomanime*
 ┃╠➥ *${prefix}hentai*
-┃╠➥ *${prefix}anime*
 ┃╠➥ *${prefix}naruto*
 ┃╠➥ *${prefix}sasuke*
 ┃╠➥ *${prefix}hinata*

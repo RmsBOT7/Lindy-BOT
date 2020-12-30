@@ -33,7 +33,6 @@ Jangan spam gua Tod🗿
 ┣━━°❀ ❬ _*GROUP*_ ❭ ❀°━━━━━━━━━⊱
 ┃╠➥ *${prefix}mentionall*
 ┃╠➥ *${prefix}mentionall2*
-┃╠➥ *${prefix}mentionall3*
 ┃╠➥ *${prefix}tagall*
 ┃╠➥ *${prefix}promote* [tag]
 ┃╠➥ *${prefix}demote* [tag]
@@ -149,6 +148,7 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}boruto*
 ┃╠➥ *${prefix}minato*
 ┣━━°❀ ❬ _*OWNER*_ ❭ ❀°━━━━━━━━⊱
+┃╠➥ *${prefix}bar*
 ┃╠➥ *${prefix}bc*
 ┃╠➥ *${prefix}leave*
 ┃╠➥ *${prefix}clearall*

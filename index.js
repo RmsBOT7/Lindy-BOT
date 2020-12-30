@@ -76,7 +76,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Halo @${num.split('@')[0]}\nSelamat datang di group *${mdata.subject}* Jangan lupa intro ente!\n*Nama:*\n*Umur:*\n*Kota:*\n\nBarxnl-BOT`
+				teks = `Halo @${num.split('@')[0]}\nSelamat datang di group *${mdata.subject}* Jangan lupa intro ente!\n*Nama:*\n*Umur:*\n*Kota:*\n\n@barxnl\ninstagram.com\barxnl`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -126,15 +126,15 @@ async function starts() {
 				wait: '⌛ Sedang di Prosess ⌛',
 				success: '✔️ Berhasil ✔️',
 				error: {
-					stick: '❌ Gagal, terjadi kesalahan saat mengkonversi gambar ke sticker ❌',
-					Iv: '❌ Link tidak valid ❌'
+					stick: '❌ Gagal, terjadi kesalahan saat mengkonversi gambar ke sticker ',
+					Iv: '❌ Link tidak valid '
 				},
 				only: {
-					group: '❌ Perintah ini hanya bisa di gunakan dalam group! ❌',
-					ownerG: '❌ Perintah ini hanya bisa di gunakan oleh owner group! ❌',
-					ownerB: '❌ Perintah ini hanya bisa di gunakan oleh owner bot! ❌',
-					admin: '❌ Perintah ini hanya bisa di gunakan oleh admin group! ❌',
-					Badmin: '❌ Perintah ini hanya bisa di gunakan ketika bot menjadi admin! ❌'
+					group: '❌ Perintah ini hanya bisa di gunakan dalam group! ',
+					ownerG: '❌ Perintah ini hanya bisa di gunakan oleh owner group! ',
+					ownerB: '❌ Perintah ini hanya bisa di gunakan oleh owner bot! ',
+					admin: '❌ Perintah ini hanya bisa di gunakan oleh admin group! ',
+					Badmin: '❌ Perintah ini hanya bisa di gunakan ketika bot menjadi admin! '
 				}
 			}
 
@@ -189,7 +189,7 @@ async function starts() {
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*Nama bot* : ${me.name}\n*Anuther* : *Barxnl*\n\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}\n\nHi kak saya berdiri dengan JavaScript☕ Dan beberapa Api🔥Key yang sudah tertanam didalam script saya:D\n\nBarxnl-BOT`
+					teks = `*Nama bot* : ${me.name}\n*Anuther* : *Barxnl*\n*Ig*:instagram.com/barxnl\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}\n\nHi kak saya berdiri dengan JavaScript☕ Dan beberapa Api🔥Key yang sudah tertanam didalam script saya:D\n\nBarxnl-BOT`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -460,7 +460,7 @@ async function starts() {
 					if (teks.length > 9) return reply('Teksnya kepanjangan, maksimal 9 karakter')
 					reply(mess.wait)
 					buffer = await getBuffer(`https://api.vhtear.com/hartatahta?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Harta Tahta '+teks})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Tuh kak dah jadi follow ya instagram.com/barxnl Harta Tahta '+teks})
 					break
 				case 'testingg':
 					if (args.length < 1) return reply(mess.blank)
@@ -611,7 +611,8 @@ async function starts() {
                 client.groupUpdateDescription(from, `${body.slice(9)}`)
                 client.sendMessage(from, 'Succes, Ganti Deskripsi Grup', text, {quoted: mek})
                 break
-				case 'tts':
+				case 'gtts':
+                                case 'tts':
 					if (args.length < 1) return client.sendMessage(from, 'Kode bahasanya mana om?', text, {quoted: mek})
 					const gtts = require('./lib/gtts')(args[0])
 					if (args.length < 2) return client.sendMessage(from, 'Textnya mana om', text, {quoted: mek})
@@ -1380,9 +1381,9 @@ async function starts() {
 					}
 					mentions(teks, members_id, true)
 					break
-			    case 'mentionall3':
+			    case 'ownertag':
 					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
+					if (!isOwner) return reply('Kamu siapa?')
 					members_id = []
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += '\n\n'

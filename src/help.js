@@ -1,6 +1,7 @@
 const help = (prefix) => { 
 	return ` *Lindy-BOT*                
-Hi👋
+
+Hi👋 instagram.com/barxnl
 Jangan spam gua Tod🗿
 ┏━━━°❀ ❬ _*ABOUT*_ ❭ ❀°━━━━━━━━┓
 ┃║
@@ -65,6 +66,9 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}chord*
 ┃╠➥ *${prefix}hilih* [text]
 ┃╠➥ *${prefix}wiki* [text]
+┃╠➥ *${prefix}wikien* [text english]
+┃╠➥ *${prefix}snowrite* [Bar|Lindy]
+┃╠➥ *${prefix}marvelogo* [Text|text]
 ┃╠➥ *${prefix}text3d*
 ┃╠➥ *${prefix}ninjalogo*
 ┃╠➥ *${prefix}lirik*
@@ -152,6 +156,7 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}clone*
 ┃╠➥ *${prefix}block*
 ┃╠➥ *${prefix}unblock*
+┃╠➥ *${prefix}tag*
 ┃╠➥ *${prefix}ban*
 ┃╠➥ *${prefix}hidetag*
 ┃╠➥ *${prefix}hidetag2* [Lindy]

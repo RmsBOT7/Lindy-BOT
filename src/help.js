@@ -12,6 +12,7 @@ Jangan spam gua Tod🗿
 ┣━━°❀ ❬ _*MAKER*_ ❭ ❀°━━━━━━━━━⊱
 ┃╠➥ *${prefix}sticker*
 ┃╠➥ *${prefix}stiker*
+┃╠➥ *${prefix}stickergif*
 ┃╠➥ *${prefix}sgif*
 ┃╠➥ *${prefix}tsticker*
 ┃╠➥ *${prefix}nulis*

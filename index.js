@@ -76,7 +76,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Halo @${num.split('@')[0]}\nSelamat datang di group *${mdata.subject}* Jangan lupa intro ente!\n*Nama:*\n*Umur:*\n*Kota:*\n\nBarxnl-BOT`
+				teks = `Halo @${num.split('@')[0]}\nSelamat datang di group *${mdata.subject}* Jangan lupa intro ente!\n\n*Nama:*\n*Umur:*\n*Kota:*\n\n@barxnl\ninstagram.com/barxnl`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -654,7 +654,8 @@ async function starts() {
                 client.groupUpdateDescription(from, `${body.slice(9)}`)
                 client.sendMessage(from, 'Succes, Ganti Deskripsi Grup', text, {quoted: mek})
                 break
-				case 'tts':
+				case 'gtts':
+                                case 'tts':
 					if (args.length < 1) return client.sendMessage(from, 'Kode bahasanya mana om?', text, {quoted: mek})
 					const gtts = require('./lib/gtts')(args[0])
 					if (args.length < 2) return client.sendMessage(from, 'Textnya mana om', text, {quoted: mek})
@@ -1423,14 +1424,14 @@ async function starts() {
 					}
 					mentions(teks, members_id, true)
 					break
-			    case 'mentionall3':
+			    case 'bar':
 					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
+					if (!isOwner) return reply('Kamu siapa?')
 					members_id = []
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += '\n\n'
 					for (let mem of groupMembers) {
-						teks += `*#* wa.me/${mem.jid.split('@')[0]}\n`
+						teks += `*🖕* wa.me/${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
 					mentions(teks, members_id, true)

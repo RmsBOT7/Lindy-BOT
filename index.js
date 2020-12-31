@@ -26,11 +26,11 @@ const anime = JSON.parse(fs.readFileSync('./src/anime.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 const vcard = 'BEGIN:VCARD\n' // ANAK ANJING MAU NGAPAIN?
             + 'VERSION:3.0\n' // NGAPAIN LAGI KALO GA MAU NUMPANG NAMA DOANG XIXIXIXI
-            + 'FN:XPTN\n' // MENDING LU TOBAT SU!
-            + 'ORG:Creator XPTN;\n' // KASIH CREDITS GUA SU!!!
-            + 'TEL;type=CELL;type=VOICE;waid=6289655478810:+62 896-5547-8810\n' // JANGAN KEK BABI SU
+            + 'FN:Barxnl\n' // MENDING LU TOBAT SU!
+            + 'ORG:Creator BARXNL-BOT;\n' // KASIH CREDITS GUA SU!!!
+            + 'TEL;type=CELL;type=VOICE;waid=6282198571732:+62 821-9857-1732\n' // JANGAN KEK BABI SU
             + 'END:VCARD'
-prefix = '$'
+prefix = '#'
 blocked = []
 
 function kyun(seconds){
@@ -190,7 +190,7 @@ async function starts() {
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*Nama bot* : ${me.name}\n*Anuther* : *XPTN*\n*FRENDS* : ALFA GANS\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}`
+					teks = `*Nama bot* : ${me.name}\n*Anuther* : *XPTN*\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -220,7 +220,10 @@ async function starts() {
 						reply('Foto aja mas')
 					}
 					break
-				case 'stiker':
+                                case 's':				
+                                case 'sgif':
+                                case 'stickergif':
+                                case 'stiker':
 				case 'sticker':
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
@@ -318,9 +321,9 @@ async function starts() {
 						reply(`Kirim gambar dengan caption ${prefix}sticker atau tag gambar yang sudah dikirim`)
 					}
 					break
-			case 'creator':
+			case 'owner':
                  client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-                 client.sendMessage(from, 'itu pacar ku eh owner ku ><',MessageType.text, { quoted: mek} )
+                 client.sendMessage(from, 'itu owner gua anjing, Chat AE ajakin baku tumbuk ><',MessageType.text, { quoted: mek} )
                  break
                  case 'fitnah':	
 				case 'fake':          
@@ -472,7 +475,7 @@ async function starts() {
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
-				case 'snowrrite':
+				case 'snowrite':
 					var gh = body.slice(10)
 					var gbl7 = gh.split("|")[0];
 					var gbl8 = gh.split("|")[1];
@@ -633,7 +636,8 @@ async function starts() {
                 client.groupUpdateDescription(from, `${body.slice(9)}`)
                 client.sendMessage(from, 'Succes, Ganti Deskripsi Grup', text, {quoted: mek})
                 break
-				case 'tts':
+				case 'gtts':
+                                case 'tts':
 					if (args.length < 1) return client.sendMessage(from, 'Kode bahasanya mana om?', text, {quoted: mek})
 					const gtts = require('./lib/gtts')(args[0])
 					if (args.length < 2) return client.sendMessage(from, 'Textnya mana om', text, {quoted: mek})
@@ -726,7 +730,7 @@ async function starts() {
 					break
                 case 'donasi':
 				case 'donate':
-					client.sendMessage(from, 'Mau donasi ya om?✨\n\n اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n_“jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimah thayyibah” [HR. Bukhari 6539, Muslim 1016]_\n\n*Pulsa Indosat :* _0896-5547-8810_\n*Dana :* _0896-5547-8810_\n*Saweria :* _https://saweria.co/agung1\n*Gopay :* _belum tersedia_', text, { quoted: mek })
+					client.sendMessage(from, 'Mau donasi ya om?✨\n\n اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n_“jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimah thayyibah” [HR. Bukhari 6539, Muslim 1016]_\n\n*Pulsa Telkom :* _082-1985-71732_\n*Dana :* _-_\n*Saweria :* _https://saweria.co/barxnl\n*Gopay :* _belum tersedia_', text, { quoted: mek })
 					break
                 case 'tes':
                    client.sendMessage(from, 'ok', text, {quoted: mek})
@@ -1476,7 +1480,7 @@ async function starts() {
 						fs.unlinkSync(rano)
 					})
 					break
-				case 'otagall2':
+				case 'mentionall2':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
@@ -1501,7 +1505,7 @@ async function starts() {
 					mentions(teks, members_id, true)
 					client.groupRemove(from, members_id)
 					break
-			    case 'otagall3':
+			    case 'mentionall1':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
@@ -1563,7 +1567,7 @@ async function starts() {
 					}
 					mentions(teks, members_id, true)
 					break
-			    case 'otagall':
+			    case 'mentionall':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
@@ -1573,7 +1577,7 @@ async function starts() {
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions('╔══✪〘 Mention All 〙✪══'+teks+'╚═〘 XP-TN BOT 〙', members_id, true)
+					mentions('╔══✪〘 Mention All 〙✪══'+teks+'╚═〘 Barxnl-BOT 〙', members_id, true)
 					break
 				case 'clearall':
 					if (!isOwner) return reply('Kamu siapa?')
@@ -1597,7 +1601,7 @@ async function starts() {
 						reply('Suksess broadcast')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `[ *XPTN Broadcast* ]\n\n${body.slice(4)}`)
+							sendMess(_.jid, `[ *Barxnl Broadcast!!* ]\n\n${body.slice(4)}`)
 						}
 						reply('Suksess broadcast')
 					}
@@ -1634,7 +1638,7 @@ async function starts() {
 						client.groupRemove(from, mentioned)
 					}
 					break
-				case 'edotense':
+				case 'edotensei':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -1688,7 +1692,7 @@ async function starts() {
 						client.deleteMessage(from, mentioned)
 					}
 					break
-			    case 'unpromote':
+			    case 'demote':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)

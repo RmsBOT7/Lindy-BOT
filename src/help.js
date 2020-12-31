@@ -161,6 +161,11 @@ Jangan spam gua Tod🗿
 ┃╠➥ *${prefix}hidetag*
 ┃╠➥ *${prefix}hidetag2* [Lindy]
 ┣━━━━━━━━━━━━━━━━━━━━━⊱
+ *WhatsApp Group Bot:*
+ https://chat.whatsapp.com/Eu1UmAaRD4wJWkazt1nGhz
+ untuk mengetahui bot on atau 
+ tidak!!
+┣━━━━━━━━━━━━━━━━━━━━━⊱
 ┃ *Note:*
 ┃ _Untuk sticker send gambar dgn_
 ┃ _caption #s/#stiker/#sticker!!_

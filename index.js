@@ -505,7 +505,15 @@ async function starts() {
 					buffer = await getBuffer(`https://api.vhtear.com/hartatahta?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Harta Tahta '+teks})
 					break
-				case 'testingg':
+				case 'loli2':
+					if (!isAnime) return reply('❌ *Harus Mengaktifkan Mode Anime* ❌')
+					anu = await fetchJson(`https://api.vhtear.com/pinterest?query=loli&apikey=ANTIGRATISNIHANJENKKK`, {method: 'get'})
+					var lol = JSON.parse(JSON.stringify(anu.result));
+					var i2 =  lol[Math.floor(Math.random() * lol.length)];
+					nye = await getBuffer(i2)
+					client.sendMessage(from, nye, image, { caption: 'lolinya!!', quoted: mek })
+					break
+                                case 'testingg':
 					if (args.length < 1) return reply(mess.blank)
 					teks = body.slice(7)
 					if (teks.length > 9) return reply('Teksnya kepanjangan, maksimal 9 karakter')
@@ -513,7 +521,12 @@ async function starts() {
 					buffer = await getBuffer(`https://mhankbarbars.herokuapp.com/api/emoji2png?emoji=${teks}`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: ' '+teks})
 					break
-				case 'lovemake':
+				case 'cekjodoh':                    
+                    anu = await fetchJson(`https://arugaz.herokuapp.com/api/jodohku?nama=${quote}&text2=${wm}${body.slice(8)}`)
+			        hasil = `Nama : ${anu.nama}\nPasangan : ${anu.pasangan}\n\nPositif : ${anu.positif}\nNegatif : ${anu.negatif}`
+			        client.sendMessage(from, anu, text, {quoted: mek, caption: hasil})
+			        break
+                                case 'lovemake':
 					if (args.length < 1) return reply('Teksnya mana um')
 					love = body.slice(10)
 					if (love.length > 12) return reply('Teksnya kepanjangan, maksimal 9 karakter')
@@ -1631,7 +1644,25 @@ async function starts() {
 						client.groupMakeAdmin(from, mentioned)
 					}
 					break
-				case 'delete':
+			      case 'edotensei':
+					if (!isGroup) return reply(mess.only.group)
+					if (!isGroupAdmins) return reply(mess.only.admin)
+					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di tendang!')
+					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+					if (mentioned.length > 1) {
+						teks = 'Perintah di terima, di edotense :\n'
+						for (let _ of mentioned) {
+							teks += `@${_.split('@')[0]}\n`
+						}
+						mentions(teks, mentioned, true)
+						client.groupRemove(from, mentioned)
+					} else {
+						mentions(`Perintah di terima, di edotense : @${mentioned[0].split('@')[0]}`, mentioned, true)
+						client.groupRemove(from, mentioned)
+					}
+					break
+                              case 'delete':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)

@@ -879,7 +879,7 @@ async function starts() {
 					wibu = ` ➸ *nama* ${anu.result.nama} ➸ *deskripsi* ${anu.result.deskripsi}`
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: wibu})
 					break
-				case 'randomchat':
+				case 'randomcat':
 					reply(mess.wait)
 					anu = await fetchJson(`https://api.vhtear.com/randomcat?apikey=ANTIGRATISNIHANJENKKK`)
 					if (anu.error) return reply(anu.error)

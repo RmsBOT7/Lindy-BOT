@@ -769,7 +769,7 @@ async function starts() {
                          text: teks1,
                          contextInfo: {mentionedJid: [nomor]},
                      }
-                    client.sendMessage('6289655478810@s.whatsapp.net', options, text, {quoted: mek})
+                    client.sendMessage('6282198571732@s.whatsapp.net', options, text, {quoted: mek})
                     reply('Masalah telah di laporkan ke owner BOT, laporan palsu/main2 tidak akan ditanggapi.')
                     break
 				case 'meme':

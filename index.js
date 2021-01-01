@@ -821,7 +821,15 @@ async function starts() {
 					buff = await getBuffer(anu.gambar)
 					client.sendMessage(from, buff, image, {quoted: mek})
 					break
-				case 'walpaperhd':
+				case 'nekonime2':
+                                        if (!isAnime) return reply('❌ *Harus Mengaktifkan Mode Anime* ❌')
+                                        gatauda = body.slice(6)
+                                        reply(mess.wait)
+                                        anu = await fetchJson(`https://arugaz.herokuapp.com/api/nekonime`, {method: 'get'})
+                                        buffer = await getBuffer(anu.result)
+                                        client.sendMessage(from, buffer, image, {quoted: mek})
+                                        break
+                                case 'walpaperhd':
 					if (args.length < 1) return reply('teks nya mana om')
 					teks = body.slice(7)
 					reply(mess.wait)
@@ -831,7 +839,8 @@ async function starts() {
 					break
 			    case 'nekonime':
 				    try {
-						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nekonime`, {method: 'get'})
+						if (!isAnime) return reply('❌ *Harus Mengaktifkan Mode Anime* ❌')
+                                                res = await fetchJson(`https://tobz-api.herokuapp.com/api/nekonime`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Ingat! Cintai nekonime'})
 					} catch (e) {
@@ -861,7 +870,8 @@ async function starts() {
 					break
 			    case 'waifu':
 				    try {
-						res = await fetchJson(`https://tobz-api.herokuapp.com/api/waifu`, {method: 'get'})
+						if (!isAnime) return reply('❌ *Harus Mengaktifkan Mode Anime* ❌')
+                                                res = await fetchJson(`https://tobz-api.herokuapp.com/api/waifu`, {method: 'get'})
 						buffer = await getBuffer(res.image)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Ingat! Cintai waifu!'})
 					} catch (e) {
@@ -870,7 +880,8 @@ async function starts() {
 					}
 					break
 			    case 'waifu2':
-					reply(mess.wait)
+					if (!isAnime) return reply('❌ *Harus Mengaktifkan Mode Anime* ❌')
+                                        reply(mess.wait)
 					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/waifu`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					buffer = await getBuffer(anu.image)
@@ -885,7 +896,8 @@ async function starts() {
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
 				case 'wibu':
-					reply(mess.wait)
+					if (!isAnime) return reply('❌ *Harus Mengaktifkan Mode Anime* ❌')
+                                        reply(mess.wait)
 					anu = await fetchJson(`https://api.vhtear.com/randomwibu&apikey=ANTIGRATISNIHANJENKKK`)
 					if (anu.error) return reply(anu.error)
 					buffer = await getBuffer(anu.result.foto)
@@ -907,7 +919,8 @@ async function starts() {
 					break
 			    case 'randomanime':
 				    try {
-						res = await fetchJson(`https://tobz-api.herokuapp.com/api/randomanime`, {method: 'get'})
+						if (!isAnime) return reply('❌ *Harus Mengaktifkan Mode Anime* ❌')
+                                                res = await fetchJson(`https://tobz-api.herokuapp.com/api/randomanime`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'ni randomanime!'})
 					} catch (e) {

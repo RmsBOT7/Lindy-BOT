@@ -1,8 +1,9 @@
 const help = (prefix) => { 
 	return ` _*>BarXnl_BOT<*_                
  
- *Instagram*
+ *Instagram Follow*
  instagram.com/barxnl
+ 
  Hi, _*undefined*_ 
  Berikut adalah fitur pada bot!
 _*Fun*_
@@ -31,9 +32,9 @@ _*Wibu*_
 ├ *${prefix}waifu*
 ├ *${prefix}waifu2*
 ├ *${prefix}nakonime*
-├ *${prefix}wibu*
+├ *${prefix}nekonime2*
 ├ *${prefix}wait*
-├ *${prefix}neko*
+├ *${prefix}wibu*
 ├ *${prefix}pokemon*
 ├ *${prefix}naruto*
 ├ *${prefix}hinata*

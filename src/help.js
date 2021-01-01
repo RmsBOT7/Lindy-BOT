@@ -1,7 +1,8 @@
 const help = (prefix) => { 
 	return ` _*>BarXnl_BOT<*_                
-
-
+ 
+ *Instagram*
+ instagram.com/barxnl
  Hi, _*undefined*_ 
  Berikut adalah fitur pada bot!
 _*Fun*_
@@ -17,7 +18,7 @@ _*Fun*_
 ├ *${prefix}simi* [text]
 ├ *${prefix}bucin*
 ├ *${prefix}gtts* [text]
-└ *${prefix}tts*
+└ *${prefix}tts* [text]
 
 _*Kerang*_
 ├ *${prefix}apakah*
@@ -168,6 +169,7 @@ _*Download*_
 └ *${prefix}tiktok* [link]
 
 _*Owner*_
+├ *${prefix}kudeta*
 ├ *${prefix}bc*
 ├ *${prefix}bc2*
 ├ *${prefix}leave*

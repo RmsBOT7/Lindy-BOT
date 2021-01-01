@@ -33,7 +33,7 @@ _*Wibu*_
 ├ *${prefix}nakonime*
 ├ *${prefix}wibu*
 ├ *${prefix}wait*
-├ *${prefix}inu*
+├ *${prefix}neko*
 ├ *${prefix}pokemon*
 ├ *${prefix}naruto*
 ├ *${prefix}hinata*
@@ -147,6 +147,7 @@ _*Textpro*_
 _*Animals*_
 ├ *${prefix}randomcat*
 ├ *${prefix}anjing*
+├ *${prefix}inu*
 ├ *${prefix}elang*
 └ *${prefix}unta*
 

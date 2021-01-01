@@ -50,12 +50,12 @@ _*Wibu*_
 ├ *${prefix}kurumi*
 └ *${prefix}miku*
 
-_*Nsfw Menu*_
+_*Nsfw +18 Menu*_
 ├ *${prefix}hentai*
 ├ *${prefix}randomhentai*
 ├ *${prefix}nsfwblowjob*
 ├ *${prefix}nsfwtrap*
-├ *${prefix}nsfwneko*
+└ *${prefix}nsfwneko*
 
 _*Sticker*_
 ├ *${prefix}sticker*

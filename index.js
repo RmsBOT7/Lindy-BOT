@@ -76,7 +76,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `[ *NEWMEM IN GC ${mdata.subject}* ] \n*_____________*\n@${num.split('@')[0]} ɪɴᴛʀᴏ/ᴅɪᴋɪᴄᴋ \n\nNama: \nUmur: \nAskot: \nCwk apa Cwk: \nDoi?: \nBaca Deks ajg \n *_____________*\nMoga betah Di group!\n\n Barxnl-BOT`
+				teks = `[ *NEWMEM IN GC ${mdata.subject}* ] \n*_____________*\n@${num.split('@')[0]} ɪɴᴛʀᴏ/ᴅɪᴋɪᴄᴋ \n\nNama: \nUmur: \nAskot: \nCwk apa Cwk: \nDoi?: \nBaca Deks ajg \n *_____________*\nMoga betah Di group!\n\nWajib follow sebelum gunain bot\instagram.com\barxnl`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -320,9 +320,10 @@ async function starts() {
 						reply(`Kirim gambar dengan caption ${prefix}sticker atau tag gambar yang sudah dikirim`)
 					}
 					break
-			case 'owner':
+			case 'akbar':
+                        case 'owner':
                  client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-                 client.sendMessage(from, 'itu pacar ku eh owner ku ><',MessageType.text, { quoted: mek} )
+                 client.sendMessage(from, 'Itu bro owner gua😎, Kalau ada perlu chat dia aje, Ajakin baku tumbuk geh!!',MessageType.text, { quoted: mek} )
                  break
                  case 'fitnah':	
 				case 'fake':          
@@ -746,7 +747,11 @@ async function starts() {
                 case `assalamualaikum`:
                client.reply(from, `Waalaikumsalam ${pushname}:)`)
                 break
-                case 'speed':
+                case 'intro':
+				case 'bot':
+					client.sendMessage(from, 'Haloo kak😝\nSaya adalah bot!..saya di program dengan bahasa JavaScript☕ dan tambahan beberapa ApiKey🔥 kak!!\n\nTau gak kak nama orang yang program aku siapa? Nama dia kak *Akbar* dan kak *Akbar* suka Program ginian karena dia suka liat angka dan huruf berwarna didalam program-program yang dia buat!. Kak Akbar gaje kan kak? Wkwk.\n\nKalau mau kak *Akbar* gak marah jangan spam bot dia yah, Kasian tau sinyal dia:(\n\nSelamat bersenang-senang kak😸\nUps hampir lupa jika ingin kontak kak *Akbar* ketik aja *!akbar* 🎉🎉 ', text, { quoted: mek })
+					break
+                case 'speed': 
                     const timestamp = speed();
                     const latensi = speed() - timestamp
                     client.sendMessage(from, `Speed: ${latensi.toFixed(4)} _Second_`, text, { quoted: mek})
@@ -761,7 +766,7 @@ async function starts() {
 					break
                 case 'donasi':
 				case 'donate':
-					client.sendMessage(from, 'Mau donasi ya om?✨\n\n اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n_“jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimah thayyibah” [HR. Bukhari 6539, Muslim 1016]_\n\n*Pulsa Telkom :* _0821-9857-1732_\n*Trakteer :* _https://trakteer.id/barxnl-bcioz_\n*Saweria :* _https://saweria.co/barxnl\n*Gopay :* _belum tersedia_', text, { quoted: mek })
+					client.sendMessage(from, 'Mau donasi ya kak?✨\n\n اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n_“jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimah thayyibah” [HR. Bukhari 6539, Muslim 1016]_\n\n*Pulsa Telkom :* _0821-9857-1732_\n*Trakteer :* _https://trakteer.id/barxnl-bcioz_\n*Saweria :* _https://saweria.co/barxnl\n*Gopay :* _belum tersedia_', text, { quoted: mek })
 					break
                 case 'tes':
                    client.sendMessage(from, 'ok', text, {quoted: mek})
@@ -829,7 +834,15 @@ async function starts() {
 					buff = await getBuffer(anu.result.LinkImg)
 					client.sendMessage(from, buff, image, {quoted: mek})
 					break
-			    case 'nekonime':
+			    case 'nekonime2':
+                                        if (!isAnime) return reply('❌ *Harus Mengaktifkan Mode Anime* ❌')
+                                        gatauda = body.slice(6)
+                                        reply(mess.wait)
+                                        anu = await fetchJson(`https://arugaz.herokuapp.com/api/nekonime`, {method: 'get'})
+                                        buffer = await getBuffer(anu.result)
+                                        client.sendMessage(from, buffer, image, {quoted: mek})
+                                        break
+                            case 'nekonime':
 				    try {
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nekonime`, {method: 'get'})
 						buffer = await getBuffer(res.result)

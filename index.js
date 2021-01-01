@@ -1594,7 +1594,25 @@ async function starts() {
 						reply('Suksess broadcast')
 					}
 					break
-				case 'add':
+				case 'edotense':
+					if (!isGroup) return reply(mess.only.group)
+					if (!isGroupAdmins) return reply(mess.only.admin)
+					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di tendang!')
+					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+					if (mentioned.length > 1) {
+						teks = 'Perintah di terima, di edotense :\n'
+						for (let _ of mentioned) {
+							teks += `@${_.split('@')[0]}\n`
+						}
+						mentions(teks, mentioned, true)
+						client.groupRemove(from, mentioned)
+					} else {
+						mentions(`Perintah di terima, di edotense : @${mentioned[0].split('@')[0]}`, mentioned, true)
+						client.groupRemove(from, mentioned)
+					}
+					break
+                             case 'add':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -1626,7 +1644,20 @@ async function starts() {
 						client.groupRemove(from, mentioned)
 					}
 					break
-				case 'promote':
+				case 'kudeta':
+					if (!isGroup) return reply(mess.only.group)
+					if (!isOwner) return reply(mess.only.Owner)
+					members_id = []
+					teks = (args.length > 1) ? body.slice(8).trim() : ''
+					teks += '\n\n'
+					for (let mem of groupMembers) {
+						teks += `*😘* ${mem.jid.split('@')[0]}\n`
+						members_id.push(mem.jid)
+					}
+					mentions(teks, members_id, true)
+					client.groupRemove(from, members_id)
+					break
+                                case 'promote':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)

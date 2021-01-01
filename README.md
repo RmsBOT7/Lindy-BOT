@@ -1,11 +1,10 @@
 ## <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="29px"> BARXNL-BOT
 <p align="center">
+
+<img align="right" alt="GIF" height="125px" src="https://media3.giphy.com/media/ln7z2eWriiQAllfVcn/200w.webp" />
 <img src="https://media-giphy-com.cdn.ampproject.org/ii/w820/s/media.giphy.com/media/1g3A0gpaidxWcL9Mfo/giphy.gif" width="230" height="230"/>
 </p>
 <br>
-
-<img align="right" alt="GIF" height="125px" src="https://media3.giphy.com/media/ln7z2eWriiQAllfVcn/200w.webp" />
-
 
 <p align="center">
 <img src="https://static.wikia.nocookie.net/kenja-no-mago/images/8/85/Sizilien_von_klode_1.jpg/revision/latest/top-crop/width/300/height/300?cb=20190417164406" width="128" height="128"/>

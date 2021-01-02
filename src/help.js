@@ -1,16 +1,13 @@
 const help = (prefix) => { 
-	return ` _*>BarXnl_BOT<*_                
- 
- *Instagram Follow*
+	return `              
+  *Instagram Follow*
  instagram.com/barxnl
  
+_*>BarXnl_BOT<*_
+
  Hi, _*undefined*_ 
  Berikut adalah fitur pada bot!
 _*Fun*_
-├ *${prefix}tebakgambar*
-├ *${prefix}caklontong*
-├ *${prefix}family100*
-├ *${prefix}game*
 ├ *${prefix}truth*
 ├ *${prefix}dare*
 ├ *${prefix}quotes*
@@ -19,7 +16,7 @@ _*Fun*_
 ├ *${prefix}simi* [text]
 ├ *${prefix}bucin*
 ├ *${prefix}gtts* [text]
-└ *${prefix}tts* [text]
+└ *${prefix}tts*
 
 _*Kerang*_
 ├ *${prefix}apakah*
@@ -32,30 +29,16 @@ _*Wibu*_
 ├ *${prefix}waifu*
 ├ *${prefix}waifu2*
 ├ *${prefix}nakonime*
-├ *${prefix}nekonime2*
-├ *${prefix}wait*
 ├ *${prefix}wibu*
+├ *${prefix}wait*
 ├ *${prefix}pokemon*
-├ *${prefix}naruto*
-├ *${prefix}hinata*
-├ *${prefix}sasuke*
-├ *${prefix}sakura*
-├ *${prefix}boruto*
-├ *${prefix}minato*
-├ *${prefix}loli*
-├ *${prefix}loli2*
-├ *${prefix}rize*
-├ *${prefix}akira*
-├ *${prefix}itori*
-├ *${prefix}kurumi*
-└ *${prefix}miku*
 
-_*Nsfw +18 Menu*_
-├ *${prefix}hentai*
+
+_*Nsfw Menu*_
 ├ *${prefix}randomhentai*
 ├ *${prefix}nsfwblowjob*
 ├ *${prefix}nsfwtrap*
-└ *${prefix}nsfwneko*
+├ *${prefix}nsfwneko*
 
 _*Sticker*_
 ├ *${prefix}sticker*
@@ -69,27 +52,19 @@ _*Sticker*_
 
 _*Search*_
 ├ *${prefix}ytsearch* [yt search]
-├ *${prefix}pinterest* [text]
-├ *${prefix}image* [naruto]
 ├ *${prefix}lirik* [judul lagu]
 ├ *${prefix}chord* [judul lagu]
-├ *${prefix}igstalk* [barxnl]
-├ *${prefix}wiki* [cinta]
 ├ *${prefix}wikien* [love]
-├ *${prefix}tiktokstalk* [username]
 ├ *${prefix}url2img* [link]
 ├ *${prefix}shorturl*
 ├ *${prefix}ssweb* [link]
 ├ *${prefix}fototiktok* [username]
 ├ *${prefix}map* [kota]
-├ *${prefix}infomotor* [beat mber]
-├ *${prefix}infomobil* [avanza]
 ├ *${prefix}indohot* 
 ├ *${prefix}kbbi* [kamus]
 ├ *${prefix}brainly* [tau sendiri kan]
 ├ *${prefix}infoghitub* 
-├ *${prefix}infocuaca* [kota]
-└ *${prefix}infogempa*
+
 
 _*Group*_
 ├ *${prefix}mentionall*
@@ -115,45 +90,24 @@ _*Group*_
 ├ *${prefix}listadmins*
 └ *${prefix}speed*
 
+_*Textpro*_
+├ *${prefix}ninjalogo* [text|text]
+├ *${prefix}marvelogo* [text|text]
+├ *${prefix}snowrite* [text|text]
+├ *${prefix}water* [text]
+├ *${prefix}text3d* [text]
+├ *${prefix}ninjalogo* [text|text]
+├ *${prefix}wolflogo* [text|text]
+├ *${prefix}lionlogo* [text|text]
+
 _*Primbon*_
-├ *${prefix}cekjodoh* [nama]
 ├ *${prefix}ramaljadian* [nama|nama]
 ├ *${prefix}primbonjodoh* [text|text]
 ├ *${prefix}artinama* [barxnl]
 └ *${prefix}ramalhp* [082xxx]
 
-_*Textpro*_
-├ *${prefix}tahta* [Lindy]
-├ *${prefix}pornohub* [text|text]
-├ *${prefix}snowrite* [text|text]
-├ *${prefix}marvelogo* [text|text]
-├ *${prefix}text3d* [text]
-├ *${prefix}ninjalogo* [text|text]
-├ *${prefix}wolflogo* [text|text]
-├ *${prefix}lionlogo* [text|text]
-├ *${prefix}textscreen* [text
-├ *${prefix}rtext* [text]
-├ *${prefix}thunder* [text]
-├ *${prefix}stiltext* [text|text]
-├ *${prefix}party* [text]
-├ *${prefix}galaxtext* [text]
-├ *${prefix}lovemake* [text]
-├ *${prefix}walpaperhd* [text]
-├ *${prefix}watercolor* [text]
-├ *${prefix}quotemaker* [tx|tx|random]
-├ *${prefix}water* [text]
-├ *${prefix}epep* [text]
-└ *${prefix}glitch* [text]
-
-_*Animals*_
-├ *${prefix}randomcat*
-├ *${prefix}anjing*
-├ *${prefix}inu*
-├ *${prefix}elang*
-└ *${prefix}unta*
-
 _*Others*_
-├ *${prefix}nulis*
+├ *${prefix}nulis* [fix]
 ├ *${prefix}ocr*
 ├ *${prefix}meme*
 ├ *${prefix}memindo*
@@ -164,11 +118,11 @@ _*Others*_
 └ *${prefix}report*
 
 _*Download*_
-├ *${prefix}yt* [link]
+├ *${prefix}yt* [link] [fix]
 ├ *${prefix}ytmp3* [link]
 ├ *${prefix}ytmp4* [link]
-├ *${prefix}joox* [judul lagu]
-└ *${prefix}tiktok* [link]
+├ *${prefix}joox* [judul lagu] [fix]
+└ *${prefix}tiktok* [link] [Fix]
 
 _*Owner*_
 ├ *${prefix}kudeta*

@@ -367,7 +367,30 @@ async function starts() {
 					client.sendMessage(from, '60', text) // ur cods
 					}, 10000) // 1000 = 1s,
 					break
-				case 'linkgroup':
+                               case 'tomp3':
+                	                client.updatePresence(from, Presence.composing) 
+					if (!isPremium) return reply (mess.only.premi)
+					if (!isQuotedVideo) return reply('❌ reply videonya um ❌')
+					reply(mess.wait)
+					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
+					media = await client.downloadAndSaveMediaMessage(encmedia)
+					ran = getRandom('.mp4')
+					exec(`ffmpeg -i ${media} ${ran}`, (err) => {
+						fs.unlinkSync(media)
+						if (err) return reply('❌ Gagal, pada saat mengkonversi video ke mp3 ❌')
+						buffer = fs.readFileSync(ran)
+						client.sendMessage(from, buffer, audio, {mimetype: 'audio/mp4', quoted: mek})
+						fs.unlinkSync(ran)
+					})
+					break
+				case 'fb':
+               if (!isGroup) return reply(mess.only.group)
+               data = await fetchJson(`https://mhankbarbars.herokuapp.com/api/epbe?url=${body.slice(4)}&apiKey=${apiKey}`)
+               if (data.error) return reply(data.error)
+               buffer = await getBuffer(data.result)
+               client.sendMessage(from, buffer, video, {quoted: mek, caption: `judul : ${data.title}\nsize : ${data.filesize}\ndiupload : ${data.published}`})
+               break
+                                case 'linkgroup':
 				case 'linkgrup':
 				case 'linkgc':
 				    if (!isGroup) return reply(mess.only.group)
@@ -376,7 +399,34 @@ async function starts() {
 				    yeh = `https://chat.whatsapp.com/${linkgc}\n\nlink Group *${groupName}*`
 				    client.sendMessage(from, yeh, text, {quoted: mek})
 			        break
-				case 'hidetag':
+				case 'beritahoax':
+					client.updatePresence(from, Presence.composing) 
+					data = await fetchJson(`https://docs-jojo.herokuapp.com/api/infohoax`, {method: 'get'})
+					teks = '=================\n'
+					for (let i of data.result) {
+						teks += `*Gambar* : ${i.image}\n*Title* : ${i.title}\n*link* : ${i.link}\n*tag* : ${i.tag}\n=================\n`
+					}
+					reply(teks.trim())
+					break
+                                case 'bcgc':
+					client.updatePresence(from, Presence.composing) 
+					if (!isOwner) return reply(mess.only.ownerB)
+					if (args.length < 1) return reply('.......')
+					if (isMedia && !mek.message.videoMessage || isQuotedImage) {
+						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
+						buff = await client.downloadMediaMessage(encmedia)
+						for (let _ of groupMembers) {
+							client.sendMessage(_.jid, buff, image, {caption: `*「 BC GROUP 」*\n*Group* : ${groupName}\n\n${body.slice(6)}`})
+						}
+						reply('')
+					} else {
+						for (let _ of groupMembers) {
+							sendMess(_.jid, `*「 BC GROUP 」*\n*Group* : ${groupName}\n\n${body.slice(6)}`)
+						}
+						reply('Suksess broadcast group')
+					}
+					break
+                                case 'hidetag':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply('kamu siapa?')
 					var value = body.slice(9)

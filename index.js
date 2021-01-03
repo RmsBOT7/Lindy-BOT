@@ -544,7 +544,7 @@ async function starts() {
 					break
                                 case 'kiss':
 				    try {
-						res = await fetchJson(`https://tobz-api.herokuapp.com/api/hug`, {method: 'get'})
+						res = await fetchJson(`https://tobz-api.herokuapp.com/api/kiss`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Avv, Jadi iri saya;('})
 					} catch (e) {

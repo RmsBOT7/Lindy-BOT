@@ -26,6 +26,8 @@ _*Kerang*_
 
 _*Wibu*_
 ├ *${prefix}loli*
+├ *${prefix}ramdomcry*
+├ *${prefix}anime
 ├ *${prefix}kiss*
 ├ *${prefix}peluk*
 ├ *${prefix}randomanime*
@@ -40,6 +42,7 @@ _*Wibu*_
 
 _*Nsfw Menu*_
 ├ *${prefix}codenuklir* haram ajg
+├ *${prefix}hentai
 ├ *${prefix}randomhentai*
 ├ *${prefix}nsfwblowjob*
 ├ *${prefix}nsfwtrap*

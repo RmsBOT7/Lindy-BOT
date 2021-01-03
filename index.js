@@ -21,6 +21,7 @@ const { removeBackgroundFromImageFile } = require('remove.bg')
 const imgbb = require('imgbb-uploader')
 const welkom = JSON.parse(fs.readFileSync('./src/welkom.json'))
 const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
+const { kodenuklir } = require('./src/kodenuklir')
 const anime = JSON.parse(fs.readFileSync('./src/anime.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 const vcard = 'BEGIN:VCARD\n' // ANAK ANJING MAU NGAPAIN?
@@ -486,7 +487,32 @@ async function starts() {
 					anu = await fetchJson(`https://api.vhtear.com/primbonjodoh?nama=${gbl1}&pasangan=${gbl2}&apikey=ANTIGRATISNIHANJENKKK`)
 					reply(anu.result.hasil)
 					break
-				case 'say':
+				case 'codenuklir':
+					if (!isGroup) return reply(mess.only.group)
+					if (!isNsfw) return reply('Fitur Nsfw Belum Dihidupkan Ketik ${prefix} nsfw 1 jika ingin mematikan ketik ${prefix} nsfw 0\nFitur mengandung +18, Tidak di sarankan untuk anak di bawah umur')
+					client.sendMessage(from, kodenuklir(), text, { quoted: mek })
+					break
+                                case 'kiss':
+				    try {
+						res = await fetchJson(`https://tobz-api.herokuapp.com/api/hug`, {method: 'get'})
+						buffer = await getBuffer(res.result)
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Avv, Jadi iri saya;('})
+					} catch (e) {
+						console.log(`Error :`, color(e,'red'))
+						reply('❌ *ERROR* ❌')
+					}
+					break
+                                case 'peluk':
+				    try {
+						res = await fetchJson(`https://tobz-api.herokuapp.com/api/hug`, {method: 'get'})
+						buffer = await getBuffer(res.result)
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'W jadi pengen anjc!!'})
+					} catch (e) {
+						console.log(`Error :`, color(e,'red'))
+						reply('❌ *ERROR* ❌')
+					}
+					break
+                                case 'say':
                                        const asu = body.slice(4)
                                        if (argz.lenght >= 1) return client.sendText(from, asu)
                                        break
@@ -506,7 +532,7 @@ async function starts() {
 					buffer = await getBuffer(`https://api.vhtear.com/hartatahta?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Harta Tahta '+teks})
 					break
-				case 'loli2':
+				case 'loli':
 					if (!isAnime) return reply('❌ *Harus Mengaktifkan Mode Anime* ❌')
 					anu = await fetchJson(`https://api.vhtear.com/pinterest?query=loli&apikey=ANTIGRATISNIHANJENKKK`, {method: 'get'})
 					var lol = JSON.parse(JSON.stringify(anu.result));
@@ -852,7 +878,7 @@ async function starts() {
 						reply('❌ *ERROR* ❌')
 					}
 					break
-				case 'loli':
+				case 'loli2':
 				    try {
 						res = await fetchJson(`https://api.lolis.life/random`, {method: 'get'})
 						buffer = await getBuffer(res.url)

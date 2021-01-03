@@ -537,7 +537,40 @@ async function starts() {
 					anu = await fetchJson(`https://api.vhtear.com/primbonjodoh?nama=${gbl1}&pasangan=${gbl2}&apikey=ANTIGRATISNIHANJENKKK`)
 					reply(anu.result.hasil)
 					break
-				case 'codenuklir':
+				case 'hentai':
+                                    try {
+                                                if (!isNsfw) return reply('❌ *FALSE* ❌')
+                                                res = await fetchJson(`https://tobz-api.herokuapp.com/api/hentai`, {method: 'get'})
+                                                buffer = await getBuffer(res.result)
+                                                client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Nih gan'})
+                                        } catch (e) {
+                                                console.log(`Error :`, color(e,'red'))
+                                                reply('❌ *ERROR* ❌')
+                                        }
+                                        break
+                            case 'randomcry':
+                                    try {
+                                                if (!isAnime) return reply('❌ *Harus Mengaktifkan Mode Anime* ❌')
+                                                res = await fetchJson(`https://tobz-api.herokuapp.com/api/cry`, {method: 'get'})
+                                                buffer = await getBuffer(res.result)
+                                                client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Nih gan'})
+                                        } catch (e) {
+                                                console.log(`Error :`, color(e,'red'))
+                                                reply('❌ *ERROR* ❌')
+                                        }
+                                        break
+                           case 'anime':
+                                    try {
+                                                if (!isAnime) return reply('❌ *Harus Mengaktifkan Mode Anime* ❌')
+                                                res = await fetchJson(`https://tobz-api.herokuapp.com/api/randomanime`, {method: 'get'})
+                                                buffer = await getBuffer(res.result)
+                                                client.sendMessage(from, buffer, image, {quoted: mek, caption: 'tuh amjim'})
+                                        } catch (e) {
+                                                console.log(`Error :`, color(e,'red'))
+                                                reply('❌ *ERROR* ❌')
+                                        }
+                                        break
+                                case 'codenuklir':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isNsfw) return reply('Fitur Nsfw Belum Dihidupkan Ketik ${prefix} nsfw 1 jika ingin mematikan ketik ${prefix} nsfw 0\nFitur mengandung +18, Tidak di sarankan untuk anak di bawah umur')
 					client.sendMessage(from, kodenuklir(), text, { quoted: mek })

@@ -77,7 +77,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `[ *NEWMEM IN GC ${mdata.subject}* ] \n*_____________*\n@${num.split('@')[0]} ɪɴᴛʀᴏ/ᴅɪᴋɪᴄᴋ \n\nNama: \nUmur: \nAskot: \nCwk apa Cwk: \nDoi?: \nBaca Deks ajg \n *_____________*\nMoga betah Di group!\n\nWajib follow sebelum gunain bot\instagram.com\barxnl`
+				teks = `[ *NEWMEM IN GC ${mdata.subject}* ] \n*_____________*\n@${num.split('@')[0]} ɪɴᴛʀᴏ/ᴅɪᴋɪᴄᴋ \n\nNama: \nUmur: \nAskot: \nCwk apa Cwk: \nDoi?: \nBaca Deks ajg \n *_____________*\nMoga betah Di group!\n\nWajib follow sebelum gunain bot\ninstagram.com\barxnl`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -324,7 +324,7 @@ async function starts() {
 			case 'akbar':
                         case 'owner':
                  client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-                 client.sendMessage(from, 'Itu bro owner gua😎, Kalau ada perlu chat dia aje, Ajakin baku tumbuk geh!!',MessageType.text, { quoted: mek} )
+                 client.sendMessage(from, 'Itu bro BOSS gua😎, Kalau ada perlu chat dia aje, Ajakin baku tumbuk geh!!',MessageType.text, { quoted: mek} )
                  break
                  case 'fitnah':	
 				case 'fake':          
@@ -825,7 +825,7 @@ async function starts() {
                 break
                 case 'intro':
 				case 'bot':
-					client.sendMessage(from, 'Haloo kak😝\nSaya adalah bot!..saya di program dengan bahasa JavaScript☕ dan tambahan beberapa ApiKey🔥 kak!!\n\nTau gak kak nama orang yang program aku siapa? Nama dia kak *Akbar* dan kak *Akbar* suka Program ginian karena dia suka liat angka dan huruf berwarna didalam program-program yang dia buat!. Kak Akbar gaje kan kak? Wkwk.\n\nKalau mau kak *Akbar* gak marah jangan spam bot dia yah, Kasian tau sinyal dia:(\n\nSelamat bersenang-senang kak😸\nUps hampir lupa jika ingin kontak kak *Akbar* ketik aja *!akbar* 🎉🎉 ', text, { quoted: mek })
+					client.sendMessage(from, 'Haloo kak😝\nSaya adalah bot!..saya di program dengan bahasa JavaScript☕ dan tambahan beberapa ApiKey🔥 kak!!\n\nTau gak kak nama orang yang program aku siapa? Nama dia kak *Akbar* dan kak *Akbar* suka Program ginian karena dia suka liat angka dan huruf berwarna didalam program-program yang dia buat!. Kak Akbar gaje kan kak? Wkwk.\n\nKalau mau kak *Akbar* gak marah jangan spam bot dia yah, Kasian tau sinyal dia:(\n\nSelamat bersenang-senang kak😸\nUps hampir lupa jika ingin kontak kak *Akbar* ketik aja *${prefix}akbar* 🎉🎉 ', text, { quoted: mek })
 					break
                 case 'speed': 
                     const timestamp = speed();

@@ -25,20 +25,24 @@ _*Kerang*_
 └ *${prefix}rate*
 
 _*Wibu*_
+├ *${prefix}loli*
+├ *${prefix}kiss*
+├ *${prefix}peluk*
 ├ *${prefix}randomanime*
 ├ *${prefix}waifu*
 ├ *${prefix}waifu2*
 ├ *${prefix}nakonime*
+├ *${prefix}nekonime2*
 ├ *${prefix}wibu*
 ├ *${prefix}wait*
-├ *${prefix}pokemon*
+└ *${prefix}pokemon*
 
 
 _*Nsfw Menu*_
 ├ *${prefix}randomhentai*
 ├ *${prefix}nsfwblowjob*
 ├ *${prefix}nsfwtrap*
-├ *${prefix}nsfwneko*
+└ *${prefix}nsfwneko*
 
 _*Sticker*_
 ├ *${prefix}sticker*
@@ -51,19 +55,19 @@ _*Sticker*_
 └ *${prefix}tsticker*
 
 _*Search*_
+├ *${prefix}beritahoax*
 ├ *${prefix}ytsearch* [yt search]
 ├ *${prefix}lirik* [judul lagu]
 ├ *${prefix}chord* [judul lagu]
 ├ *${prefix}wikien* [love]
 ├ *${prefix}url2img* [link]
-├ *${prefix}shorturl*
+├ *${prefix}shorturl* [link]
 ├ *${prefix}ssweb* [link]
 ├ *${prefix}fototiktok* [username]
 ├ *${prefix}map* [kota]
 ├ *${prefix}indohot* 
 ├ *${prefix}kbbi* [kamus]
-├ *${prefix}brainly* [tau sendiri kan]
-├ *${prefix}infoghitub* 
+└ *${prefix}infoghitub* 
 
 
 _*Group*_
@@ -98,7 +102,7 @@ _*Textpro*_
 ├ *${prefix}text3d* [text]
 ├ *${prefix}ninjalogo* [text|text]
 ├ *${prefix}wolflogo* [text|text]
-├ *${prefix}lionlogo* [text|text]
+└ *${prefix}lionlogo* [text|text]
 
 _*Primbon*_
 ├ *${prefix}ramaljadian* [nama|nama]
@@ -107,6 +111,7 @@ _*Primbon*_
 └ *${prefix}ramalhp* [082xxx]
 
 _*Others*_
+├ *${prefix}fb* [link]
 ├ *${prefix}nulis* [fix]
 ├ *${prefix}ocr*
 ├ *${prefix}meme*
@@ -114,6 +119,9 @@ _*Others*_
 ├ *${prefix}testime*
 ├ *${prefix}ttp*
 ├ *${prefix}hobby*
+├ *${prefix}intro*
+├ *${prefix}bot*
+├ *${prefix}tomp3*
 ├ *${prefix}watak*
 └ *${prefix}report*
 
@@ -128,6 +136,7 @@ _*Owner*_
 ├ *${prefix}kudeta*
 ├ *${prefix}bc*
 ├ *${prefix}bc2*
+├ *${prefix}bcgc*
 ├ *${prefix}leave*
 ├ *${prefix}clearall*
 ├ *${prefix}clone*

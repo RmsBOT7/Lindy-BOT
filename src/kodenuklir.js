@@ -4,7 +4,7 @@ const kodenuklir = () => {
 	*Hi👋👋* *TOBAT BRO ASTAGHFIRULLAH 😌*
 
 Code Nuklear [Doujin Hentai Genre NTR] (Netorare)
-
+By: *Barxnl*
 Gampang Mode :
 • https://nhentai.net/g/316755/
 • https://nhentai.net/g/316596/

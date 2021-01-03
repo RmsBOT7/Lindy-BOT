@@ -39,6 +39,7 @@ _*Wibu*_
 
 
 _*Nsfw Menu*_
+├ *${prefix}codenuklir* haram ajg
 ├ *${prefix}randomhentai*
 ├ *${prefix}nsfwblowjob*
 ├ *${prefix}nsfwtrap*

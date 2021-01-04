@@ -3,7 +3,7 @@ const help = (prefix) => {
   *Instagram Follow*
  instagram.com/barxnl
  
-_*>BarXnl_BOT<*_
+_*>Lindy_BOT<*_
 
  Hi, _*undefined*_ 
  Berikut adalah fitur pada bot!
@@ -25,7 +25,8 @@ _*Kerang*_
 └ *${prefix}rate*
 
 _*Wibu*_
-├ *${prefix}loli*
+├ *${prefix}loli* [error]
+├ *${prefix}sarananime*
 ├ *${prefix}ramdomcry*
 ├ *${prefix}anime
 ├ *${prefix}kiss*

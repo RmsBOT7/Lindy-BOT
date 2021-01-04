@@ -1766,6 +1766,24 @@ async function starts() {
 						reply('Gagal menambahkan target, mungkin karena di private')
 					}
 					break
+                           case 'kick':
+					if (!isGroup) return reply(mess.only.group)
+	                                if (!isOwner) return reply(mess.only.ownerB)
+					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di tendang!')
+					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+					if (mentioned.length > 1) {
+						teks = 'Perintah di terima, mengeluarkan :\n'
+						for (let _ of mentioned) {
+							teks += `@${_.split('@')[0]}\n`
+						}
+						mentions(teks, mentioned, true)
+						client.groupRemove(from, mentioned)
+					} else {
+						mentions(`Perintah di terima, mengeluarkan : @${mentioned[0].split('@')[0]}`, mentioned, true)
+						client.groupRemove(from, mentioned)
+					}
+					break
 			    case 'kick':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
@@ -1969,7 +1987,7 @@ async function starts() {
 					}
 				case 'clone':
 					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
+					(!isOwner) return reply(mess.only.ownerB)
 					if (args.length < 1) return reply('Tag target yang ingin di clone')
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag cvk')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
@@ -1985,7 +2003,7 @@ async function starts() {
 					break
 				case 'setprefix':
 					if (args.length < 1) return
-					if (!isOwner) return reply(mess.only.ownerB)
+					(!isOwner) return reply(mess.only.ownerB)
 					prefix = args[0]
 					reply(`Prefix berhasil di ubah menjadi : ${prefix}`)
 					break

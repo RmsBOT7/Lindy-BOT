@@ -133,7 +133,7 @@ async function starts() {
 				only: {
 					group: '❌ Perintah ini hanya bisa di gunakan dalam group! ❌',
 					ownerG: '❌ Perintah ini hanya bisa di gunakan oleh owner group! ❌',
-					ownerB: '❌ Perintah ini hanya bisa di gunakan oleh owner bot! ❌',
+					ownerB: '❌ Perintah ini hanya bisa digunakan sama Boss *Akbar*!!\n\nGua tau lu gak senang:) ❌',
 					admin: '❌ Perintah ini hanya bisa di gunakan oleh admin group! ❌',
 					Badmin: '❌ Perintah ini hanya bisa di gunakan ketika bot menjadi admin! ❌'
 				}
@@ -577,6 +577,7 @@ async function starts() {
 					break
                                 case 'kiss':
 				    try {
+                                               if (!isAnime) return reply('❌ *Harus Mengaktifkan Mode Anime* ❌') 
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/hug`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Avv, Jadi iri saya;('})
@@ -587,7 +588,8 @@ async function starts() {
 					break
                                 case 'peluk':
 				    try {
-						res = await fetchJson(`https://tobz-api.herokuapp.com/api/hug`, {method: 'get'})
+				                if (!isAnime) return reply('❌ *Harus Mengaktifkan Mode Anime* ❌')
+                                		res = await fetchJson(`https://tobz-api.herokuapp.com/api/hug`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'W jadi pengen anjc!!'})
 					} catch (e) {
@@ -899,7 +901,7 @@ async function starts() {
 					anu = await fetchJson(`http://scrap.terhambar.com/lirik?word=${teks}`, {method: 'get'})
 					reply('Lirik dari lagu '+teks+' adalah :\n\n'+anu.result.lirik)
 					break
-				case 'anime':
+				case 'anime2':
 					teks = body.slice(7)
 					anu = await fetchJson(`https://mnazria.herokuapp.com/api/anime?query=${teks}`, {method: 'get'})
 					reply('anime nya ni '+teks+' adalah :\n\n'+anu.title)

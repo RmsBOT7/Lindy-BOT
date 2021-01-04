@@ -28,7 +28,7 @@ _*Wibu*_
 ├ *${prefix}loli* [error]
 ├ *${prefix}sarananime*
 ├ *${prefix}ramdomcry*
-├ *${prefix}anime
+├ *${prefix}anime*
 ├ *${prefix}kiss*
 ├ *${prefix}peluk*
 ├ *${prefix}randomanime*
@@ -41,9 +41,9 @@ _*Wibu*_
 └ *${prefix}pokemon*
 
 
-_*Nsfw Menu*_
+_*Nsfw Menu*_ [harom]
 ├ *${prefix}codenuklir* haram ajg
-├ *${prefix}hentai
+├ *${prefix}hentai*
 ├ *${prefix}randomhentai*
 ├ *${prefix}nsfwblowjob*
 ├ *${prefix}nsfwtrap*

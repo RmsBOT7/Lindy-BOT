@@ -22,6 +22,7 @@ const imgbb = require('imgbb-uploader')
 const welkom = JSON.parse(fs.readFileSync('./src/welkom.json'))
 const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 const { kodenuklir } = require('./src/kodenuklir')
+const { animesaran } = require('./src/animesaran')
 const anime = JSON.parse(fs.readFileSync('./src/anime.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 const vcard = 'BEGIN:VCARD\n' // ANAK ANJING MAU NGAPAIN?
@@ -537,7 +538,11 @@ async function starts() {
 					anu = await fetchJson(`https://api.vhtear.com/primbonjodoh?nama=${gbl1}&pasangan=${gbl2}&apikey=ANTIGRATISNIHANJENKKK`)
 					reply(anu.result.hasil)
 					break
-				case 'hentai':
+				case 'sarananime':
+					if (!isAnime) return reply('❌ *Harus Mengaktifkan Mode Anime* ❌')
+                                        client.sendMessage(from, animesaran() , text, { quoted: mek })
+					break
+                           case 'hentai':
                                     try {
                                                 if (!isNsfw) return reply('❌ *FALSE* ❌')
                                                 res = await fetchJson(`https://tobz-api.herokuapp.com/api/hentai`, {method: 'get'})

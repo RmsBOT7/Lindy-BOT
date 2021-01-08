@@ -27,11 +27,11 @@ const anime = JSON.parse(fs.readFileSync('./src/anime.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 const vcard = 'BEGIN:VCARD\n' // ANAK ANJING MAU NGAPAIN?
             + 'VERSION:3.0\n' // NGAPAIN LAGI KALO GA MAU NUMPANG NAMA DOANG XIXIXIXI
-            + 'FN:Barxnl\n' // MENDING LU TOBAT SU!
-            + 'ORG:Creator Barxnl-BOT;\n' // KASIH CREDITS GUA SU!!!
-            + 'TEL;type=CELL;type=VOICE;waid=6282198571732:+62 821-9857-1732\n' // JANGAN KEK BABI SU
+            + 'FN:ItsmeikyXSec404\n' // MENDING LU TOBAT SU!
+            + 'ORG:Creator ITSMEIKY BOT;\n' // KASIH CREDITS GUA SU!!!
+            + 'TEL;type=CELL;type=VOICE;waid=6281281872699:+62 812-8187-2699\n' // JANGAN KEK BABI SU
             + 'END:VCARD'
-prefix = '#'
+prefix = '%'
 blocked = []
 
 function kyun(seconds){
@@ -141,9 +141,9 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["6282198571732@s.whatsapp.net"] // replace this with your number
-			const adminbotnumber = ["628970065907@s.whatsapp.net"]
-			const frendsowner = ["6282198571732@s.whatsapp.net"]
+			const ownerNumber = ["6281281872699@s.whatsapp.net"] // replace this with your number
+			const adminbotnumber = ["6282112833021@s.whatsapp.net"]
+			const frendsowner = ["6285716066975@s.whatsapp.net"]
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -191,7 +191,7 @@ async function starts() {
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*Nama bot* : ${me.name}\n*Anuther* : *Barxnl*\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}\n\nHi kak saya berdiri dengan bahasa program JavaScript☕ Dan beberapa Api🔥Key yang sudah tertanam didalam script saya:D\n\nIg Barxnl-BOT\ninstagram.com/barxnl`
+					teks = `*Nama bot* : ${me.name}\n*Anuther* : *Abbas XD*\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}\n\nHi kak saya berdiri dengan bahasa program JavaScript☕ Dan beberapa Api🔥Key yang sudah tertanam didalam script saya:D`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -882,7 +882,7 @@ async function starts() {
 					break
                 case 'donasi':
 				case 'donate':
-					client.sendMessage(from, 'Mau donasi ya kak?✨\n\n اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n_“jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimah thayyibah” [HR. Bukhari 6539, Muslim 1016]_\n\n*Pulsa Telkom :* _0821-9857-1732_\n*Trakteer :* _https://trakteer.id/barxnl-bcioz_\n*Saweria :* _https://saweria.co/barxnl\n*Gopay :* _belum tersedia_', text, { quoted: mek })
+					client.sendMessage(from, 'Mau donasi ya kak?✨\n\n اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n_“jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimah thayyibah” [HR. Bukhari 6539, Muslim 1016]_\n\n*Ovo :* _082112833021_\n*Dana:* _082112833021_\n*Tsel :* _082112833021_', text, { quoted: mek })
 					break
                 case 'tes':
                    client.sendMessage(from, 'ok', text, {quoted: mek})
@@ -921,7 +921,7 @@ async function starts() {
                          text: teks1,
                          contextInfo: {mentionedJid: [nomor]},
                      }
-                    client.sendMessage('6282198571732@s.whatsapp.net', options, text, {quoted: mek})
+                    client.sendMessage('6285716066975@s.whatsapp.net', options, text, {quoted: mek})
                     reply('Masalah telah di laporkan ke owner BOT, laporan palsu/main2 tidak akan ditanggapi.')
                     break
 				case 'meme':

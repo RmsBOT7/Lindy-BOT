@@ -1,5 +1,7 @@
 const help = (prefix) => { 
-	return `              
+	return `      
+    [Abbas XD]
+Official Bot WhatsApp
 
  Hi, _*undefined*_ 
  Berikut adalah fitur pada bot!

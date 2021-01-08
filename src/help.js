@@ -1,12 +1,9 @@
 const help = (prefix) => { 
 	return `              
-  *Instagram Follow*
- instagram.com/barxnl
- 
-_*>Lindy_BOT<*_
 
  Hi, _*undefined*_ 
  Berikut adalah fitur pada bot!
+
 _*Fun*_
 ├ *${prefix}truth*
 ├ *${prefix}dare*
@@ -157,9 +154,7 @@ _*Owner*_
 ╽
 ╰╼ Ketik *${prefix}info* untuk melihat list informasi tentang bot
        Ketik *${prefix}owner* untuk melihat kontak owner
-         Mau donasi? 082198571732(Telkom)
-         Jika tidak ingin donasi bantu Follow Ig aja kak 
-         _instagram.com/barxnl_
-    _*BARXNL_BOT © 2020*_`
+         Mau donasi? 082112833021 (DANA/OVO)  
+    _*ABBAS XD © 2020*_`
 }
 exports.help = help
